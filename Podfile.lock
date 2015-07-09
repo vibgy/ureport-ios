@@ -1,0 +1,10 @@
+PODS:
+  - TPKeyboardAvoiding (1.2.8)
+
+DEPENDENCIES:
+  - TPKeyboardAvoiding
+
+SPEC CHECKSUMS:
+  TPKeyboardAvoiding: f1ef0028fe9ba98ef2871cf55b4bbc39cae0267b
+
+COCOAPODS: 0.37.1
