@@ -20,7 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         viewController = URLoginViewController(nibName: "URLoginViewController", bundle: nil)
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.backgroundColor = UIColor.whiteColor()
+        
         setupNavigationControllerWIthRootViewController(viewController!)
+        
         self.window?.rootViewController = self.navigation;
         self.window?.makeKeyAndVisible()
         return true
