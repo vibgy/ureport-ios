@@ -18,6 +18,8 @@
 		6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6571915A1B4EC693002CA357 /* LaunchImages.xcassets */; };
 		659A7A911B4F59E500B56983 /* URCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A901B4F59E500B56983 /* URCountry.swift */; };
 		659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A921B4F6C3100B56983 /* URDateUtil.swift */; };
+		659A7A961B51EFA800B56983 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659A7A981B51EFA800B56983 /* Localizable.strings */; };
+		659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A9B1B51F6F700B56983 /* UITextField+Keyboard.swift */; };
 		8504B15B8828C37AD0B0A324 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11918D7424D9B949ACF0C902 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,10 @@
 		6571915A1B4EC693002CA357 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
 		659A7A901B4F59E500B56983 /* URCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URCountry.swift; sourceTree = "<group>"; };
 		659A7A921B4F6C3100B56983 /* URDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URDateUtil.swift; sourceTree = "<group>"; };
+		659A7A971B51EFA800B56983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		659A7A991B51EFE100B56983 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		659A7A9A1B51EFF600B56983 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		659A7A9B1B51F6F700B56983 /* UITextField+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Keyboard.swift"; sourceTree = "<group>"; };
 		80289A0F74769B82DBFF3EA2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +154,7 @@
 		65409FE11B4C845200344D75 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				659A7A9B1B51F6F700B56983 /* UITextField+Keyboard.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -217,6 +224,7 @@
 		65409FEA1B4C845200344D75 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				659A7A981B51EFA800B56983 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -322,6 +330,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
+				ar,
 			);
 			mainGroup = 65409FB21B4C842700344D75;
 			productRefGroup = 65409FBC1B4C842700344D75 /* Products */;
@@ -339,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659A7A961B51EFA800B56983 /* Localizable.strings in Resources */,
 				65409FF61B4C9E7C00344D75 /* URUserRegisterViewController.xib in Resources */,
 				65409FC81B4C842700344D75 /* Images.xcassets in Resources */,
 				6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */,
@@ -395,6 +406,7 @@
 			files = (
 				65409FC11B4C842700344D75 /* AppDelegate.swift in Sources */,
 				659A7A911B4F59E500B56983 /* URCountry.swift in Sources */,
+				659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */,
 				65409FF51B4C9E7C00344D75 /* URUserRegisterViewController.swift in Sources */,
 				65409FEE1B4C84DE00344D75 /* URLoginViewController.swift in Sources */,
 				659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */,
@@ -418,6 +430,19 @@
 			targetProxy = 65409FD11B4C842700344D75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		659A7A981B51EFA800B56983 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659A7A971B51EFA800B56983 /* Base */,
+				659A7A991B51EFE100B56983 /* pt-BR */,
+				659A7A9A1B51EFF600B56983 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		65409FD81B4C842700344D75 /* Debug */ = {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var viewPassword: UIView!
     @IBOutlet weak var viewNick: UIView!
@@ -30,7 +30,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     var birthDay:NSDate?
     
-    let genders:[String]? = ["Male","Female"]
+    let genders:[String]? = [NSLocalizedString("male",comment:""),NSLocalizedString("female",comment:"")]
     let countries:[URCountry]? = URCountry.getCountries() as? [URCountry]
     
     override func viewDidLoad() {

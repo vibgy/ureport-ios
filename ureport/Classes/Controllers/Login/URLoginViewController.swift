@@ -24,6 +24,11 @@ class URLoginViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     //MARK: Button Events
     
     @IBAction func btTwitterTapped(sender: AnyObject) {
