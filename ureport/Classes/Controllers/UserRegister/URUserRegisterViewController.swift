@@ -28,6 +28,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     var pickerDate:UIDatePicker?
     var pickerCities:UIPickerView?
     
+    var country:URCountry?
     var birthDay:NSDate?
     
     let genders:[String]? = [NSLocalizedString("male",comment:""),NSLocalizedString("female",comment:"")]
@@ -39,16 +40,22 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
 
         setupUI()
         setupTextFieldView()
+        checkUserCountry()
     }
     
     
     //MARK: Button Events
     
     @IBAction func btNextTapped(sender: AnyObject) {
-        
+        self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)        
     }
     
     //MARK: Class Methods
+    
+    private func checkUserCountry() {
+        self.country = URCountry.getCurrentURCountry()        
+        self.txtCountry.text = self.country?.name
+    }
     
     private func setupUI() {
         self.pickerDate = UIDatePicker()
@@ -69,13 +76,6 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
         self.pickerCities!.showsSelectionIndicator = true
         self.txtCountry.inputView = self.pickerCities
         
-    }
-    
-    private func loadCities() {
-        
-        for (index,country) in enumerate(URCountry.getCountries() as! [URCountry]){
-            println("index: \(country.code!) objeto: \(country.name!)")
-        }
     }
     
     func dateChanged(sender:AnyObject) {
@@ -122,7 +122,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView == self.pickerCities {
-            return URCountry.getCountries().count()
+            return URCountry.getCountries().count
         }else if pickerView == self.pickerGender {
             return self.genders!.count
         }else {

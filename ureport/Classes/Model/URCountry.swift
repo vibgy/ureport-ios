@@ -32,5 +32,14 @@ class URCountry: NSObject {
         return countries
         
     }
+    
+    class func getCurrentURCountry() -> URCountry {
+        var country:URCountry? = URCountry()
+        
+        var locale:NSLocale! = NSLocale.currentLocale()
+        country!.code = locale.objectForKey(NSLocaleCountryCode) as? String
+        country!.name = locale.displayNameForKey(NSLocaleCountryCode, value: country!.code!)
+        return country!
+    }
 
 }

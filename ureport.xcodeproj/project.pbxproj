@@ -16,6 +16,16 @@
 		65409FF51B4C9E7C00344D75 /* URUserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65409FF31B4C9E7C00344D75 /* URUserRegisterViewController.swift */; };
 		65409FF61B4C9E7C00344D75 /* URUserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65409FF41B4C9E7C00344D75 /* URUserRegisterViewController.xib */; };
 		6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6571915A1B4EC693002CA357 /* LaunchImages.xcassets */; };
+		658D857B1B5457CC00DFB949 /* URLoginCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */; };
+		658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */; };
+		658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */; };
+		658D85811B54597700DFB949 /* URForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D857F1B54597700DFB949 /* URForgotPasswordViewController.xib */; };
+		658D85841B5460FD00DFB949 /* URMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85821B5460FD00DFB949 /* URMainViewController.swift */; };
+		658D85851B5460FD00DFB949 /* URMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D85831B5460FD00DFB949 /* URMainViewController.xib */; };
+		658D858C1B554C9000DFB949 /* URStoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D858B1B554C9000DFB949 /* URStoriesTableViewController.swift */; };
+		658D85901B554D3700DFB949 /* URStoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D858E1B554D3700DFB949 /* URStoriesTableViewCell.swift */; };
+		658D85911B554D3700DFB949 /* URStoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D858F1B554D3700DFB949 /* URStoriesTableViewCell.xib */; };
+		658D85931B554FD600DFB949 /* URStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85921B554FD600DFB949 /* URStory.swift */; };
 		659A7A911B4F59E500B56983 /* URCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A901B4F59E500B56983 /* URCountry.swift */; };
 		659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A921B4F6C3100B56983 /* URDateUtil.swift */; };
 		659A7A961B51EFA800B56983 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659A7A981B51EFA800B56983 /* Localizable.strings */; };
@@ -49,6 +59,16 @@
 		65409FF31B4C9E7C00344D75 /* URUserRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URUserRegisterViewController.swift; sourceTree = "<group>"; };
 		65409FF41B4C9E7C00344D75 /* URUserRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URUserRegisterViewController.xib; sourceTree = "<group>"; };
 		6571915A1B4EC693002CA357 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
+		658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLoginCredentialsViewController.swift; sourceTree = "<group>"; };
+		658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLoginCredentialsViewController.xib; sourceTree = "<group>"; };
+		658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		658D857F1B54597700DFB949 /* URForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		658D85821B5460FD00DFB949 /* URMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMainViewController.swift; sourceTree = "<group>"; };
+		658D85831B5460FD00DFB949 /* URMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URMainViewController.xib; sourceTree = "<group>"; };
+		658D858B1B554C9000DFB949 /* URStoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStoriesTableViewController.swift; sourceTree = "<group>"; };
+		658D858E1B554D3700DFB949 /* URStoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStoriesTableViewCell.swift; sourceTree = "<group>"; };
+		658D858F1B554D3700DFB949 /* URStoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URStoriesTableViewCell.xib; sourceTree = "<group>"; };
+		658D85921B554FD600DFB949 /* URStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStory.swift; sourceTree = "<group>"; };
 		659A7A901B4F59E500B56983 /* URCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URCountry.swift; sourceTree = "<group>"; };
 		659A7A921B4F6C3100B56983 /* URDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URDateUtil.swift; sourceTree = "<group>"; };
 		659A7A971B51EFA800B56983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -162,6 +182,9 @@
 		65409FE21B4C845200344D75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				658D85861B554A3300DFB949 /* Stories */,
+				658D857D1B54596000DFB949 /* ForgotPassword */,
+				658D85781B5457AD00DFB949 /* LoginCredentials */,
 				65409FF21B4C9E5C00344D75 /* UserRegister */,
 				65409FEB1B4C84BB00344D75 /* Login */,
 				65409FE31B4C845200344D75 /* Main */,
@@ -172,6 +195,8 @@
 		65409FE31B4C845200344D75 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				658D85821B5460FD00DFB949 /* URMainViewController.swift */,
+				658D85831B5460FD00DFB949 /* URMainViewController.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -180,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				659A7A901B4F59E500B56983 /* URCountry.swift */,
+				658D85921B554FD600DFB949 /* URStory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +243,7 @@
 		65409FE91B4C845200344D75 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				658D858D1B554D1F00DFB949 /* Stories */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -245,6 +272,41 @@
 				65409FF41B4C9E7C00344D75 /* URUserRegisterViewController.xib */,
 			);
 			path = UserRegister;
+			sourceTree = "<group>";
+		};
+		658D85781B5457AD00DFB949 /* LoginCredentials */ = {
+			isa = PBXGroup;
+			children = (
+				658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */,
+				658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */,
+			);
+			path = LoginCredentials;
+			sourceTree = "<group>";
+		};
+		658D857D1B54596000DFB949 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */,
+				658D857F1B54597700DFB949 /* URForgotPasswordViewController.xib */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		658D85861B554A3300DFB949 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				658D858B1B554C9000DFB949 /* URStoriesTableViewController.swift */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		658D858D1B554D1F00DFB949 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				658D858E1B554D3700DFB949 /* URStoriesTableViewCell.swift */,
+				658D858F1B554D3700DFB949 /* URStoriesTableViewCell.xib */,
+			);
+			path = Stories;
 			sourceTree = "<group>";
 		};
 		765863F8BACD5E4ED452B82C /* Frameworks */ = {
@@ -349,8 +411,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */,
+				658D85911B554D3700DFB949 /* URStoriesTableViewCell.xib in Resources */,
 				659A7A961B51EFA800B56983 /* Localizable.strings in Resources */,
+				658D85811B54597700DFB949 /* URForgotPasswordViewController.xib in Resources */,
 				65409FF61B4C9E7C00344D75 /* URUserRegisterViewController.xib in Resources */,
+				658D85851B5460FD00DFB949 /* URMainViewController.xib in Resources */,
 				65409FC81B4C842700344D75 /* Images.xcassets in Resources */,
 				6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */,
 				65409FEF1B4C84DE00344D75 /* URLoginViewController.xib in Resources */,
@@ -405,11 +471,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				65409FC11B4C842700344D75 /* AppDelegate.swift in Sources */,
+				658D85901B554D3700DFB949 /* URStoriesTableViewCell.swift in Sources */,
+				658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */,
 				659A7A911B4F59E500B56983 /* URCountry.swift in Sources */,
+				658D85931B554FD600DFB949 /* URStory.swift in Sources */,
 				659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */,
+				658D858C1B554C9000DFB949 /* URStoriesTableViewController.swift in Sources */,
 				65409FF51B4C9E7C00344D75 /* URUserRegisterViewController.swift in Sources */,
 				65409FEE1B4C84DE00344D75 /* URLoginViewController.swift in Sources */,
+				658D85841B5460FD00DFB949 /* URMainViewController.swift in Sources */,
 				659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */,
+				658D857B1B5457CC00DFB949 /* URLoginCredentialsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
