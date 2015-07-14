@@ -9,28 +9,48 @@
 import UIKit
 
 
-extension UIViewController: UITextFieldDelegate {
+extension UIViewController: UITextFieldDelegate, UITextViewDelegate {
     
     //MARK: Delegate Methods
     
     public func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         
-        var keyboardToolBar:UIToolbar! = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
-        keyboardToolBar!.barStyle = UIBarStyle.Default
-        
-        var arrayButtonItem:[UIBarButtonItem]! = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil),
-                                                  UIBarButtonItem(title: NSLocalizedString("close", comment: ""), style: UIBarButtonItemStyle.Done, target: self, action: "closeKeyBoard")]
-        
-        keyboardToolBar?.setItems(arrayButtonItem, animated: true)
-        textField.inputAccessoryView = keyboardToolBar
+        setupAccessoryView(textField)
         return true
         
+    }
+    
+    public func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+        setupAccessoryView(textView)
+        return true
     }
     
     //MARK: Methods
     
     public func closeKeyBoard() {
         self.view.endEditing(true)
+    }
+    
+    private func setupAccessoryView(component:AnyObject) {
+        var keyboardToolBar:UIToolbar! = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        keyboardToolBar!.barStyle = UIBarStyle.Default
+        
+        var arrayButtonItem:[UIBarButtonItem]! = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil),
+            UIBarButtonItem(title: NSLocalizedString("close", comment: ""), style: UIBarButtonItemStyle.Done, target: self, action: "closeKeyBoard")]
+        
+        keyboardToolBar?.setItems(arrayButtonItem, animated: true)
+        
+        var textView:UITextView?
+        var textField:UITextField?
+        
+        if component.isKindOfClass(UITextField){
+            textField = component as? UITextField
+            textField?.inputAccessoryView = keyboardToolBar
+        }else {
+            textView = component as? UITextView
+            textView?.inputAccessoryView = keyboardToolBar
+        }
+        
     }
     
 }

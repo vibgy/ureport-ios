@@ -58,7 +58,7 @@ class URMainViewController: UIViewController {
     
     @IBAction func btAddStoryTapped(sender: AnyObject) {
         self.btAddStoryTapped = sender as! UIButton
-        
+        self.navigationController!.pushViewController(URAddStoryViewController(nibName:"URAddStoryViewController",bundle:nil), animated: true)
     }
     
     //MARK: Class Methods

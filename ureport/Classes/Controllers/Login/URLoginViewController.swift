@@ -32,16 +32,16 @@ class URLoginViewController: UIViewController {
     //MARK: Button Events
     
     @IBAction func btTwitterTapped(sender: AnyObject) {
-        self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)        
+        self.navigationController!.pushViewController(URUserRegisterViewController(nibName: "URUserRegisterViewController", bundle: nil), animated: true)
     }
     @IBAction func btLoginTapped(sender: AnyObject) {
         self.navigationController!.pushViewController(URLoginCredentialsViewController(nibName: "URLoginCredentialsViewController", bundle: nil), animated: true)
     }
     @IBAction func btFacebookTapped(sender: AnyObject) {
-        self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
+        self.navigationController!.pushViewController(URUserRegisterViewController(nibName: "URUserRegisterViewController", bundle: nil), animated: true)
     }
     @IBAction func btGooglePlusTapped(sender: AnyObject) {
-        self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
+        self.navigationController!.pushViewController(URUserRegisterViewController(nibName: "URUserRegisterViewController", bundle: nil), animated: true)
     }
     @IBAction func btSignUpTapped(sender: AnyObject) {
         self.navigationController!.pushViewController(URUserRegisterViewController(nibName: "URUserRegisterViewController", bundle: nil), animated: true)

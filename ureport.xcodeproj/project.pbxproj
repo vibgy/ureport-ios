@@ -26,6 +26,8 @@
 		658D85901B554D3700DFB949 /* URStoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D858E1B554D3700DFB949 /* URStoriesTableViewCell.swift */; };
 		658D85911B554D3700DFB949 /* URStoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D858F1B554D3700DFB949 /* URStoriesTableViewCell.xib */; };
 		658D85931B554FD600DFB949 /* URStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85921B554FD600DFB949 /* URStory.swift */; };
+		658D85971B558A6700DFB949 /* URAddStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85951B558A6700DFB949 /* URAddStoryViewController.swift */; };
+		658D85981B558A6700DFB949 /* URAddStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D85961B558A6700DFB949 /* URAddStoryViewController.xib */; };
 		659A7A911B4F59E500B56983 /* URCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A901B4F59E500B56983 /* URCountry.swift */; };
 		659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A921B4F6C3100B56983 /* URDateUtil.swift */; };
 		659A7A961B51EFA800B56983 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659A7A981B51EFA800B56983 /* Localizable.strings */; };
@@ -69,6 +71,8 @@
 		658D858E1B554D3700DFB949 /* URStoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStoriesTableViewCell.swift; sourceTree = "<group>"; };
 		658D858F1B554D3700DFB949 /* URStoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URStoriesTableViewCell.xib; sourceTree = "<group>"; };
 		658D85921B554FD600DFB949 /* URStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStory.swift; sourceTree = "<group>"; };
+		658D85951B558A6700DFB949 /* URAddStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URAddStoryViewController.swift; sourceTree = "<group>"; };
+		658D85961B558A6700DFB949 /* URAddStoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URAddStoryViewController.xib; sourceTree = "<group>"; };
 		659A7A901B4F59E500B56983 /* URCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URCountry.swift; sourceTree = "<group>"; };
 		659A7A921B4F6C3100B56983 /* URDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URDateUtil.swift; sourceTree = "<group>"; };
 		659A7A971B51EFA800B56983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 		65409FE21B4C845200344D75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				658D85941B558A5000DFB949 /* AddStory */,
 				658D85861B554A3300DFB949 /* Stories */,
 				658D857D1B54596000DFB949 /* ForgotPassword */,
 				658D85781B5457AD00DFB949 /* LoginCredentials */,
@@ -309,6 +314,15 @@
 			path = Stories;
 			sourceTree = "<group>";
 		};
+		658D85941B558A5000DFB949 /* AddStory */ = {
+			isa = PBXGroup;
+			children = (
+				658D85951B558A6700DFB949 /* URAddStoryViewController.swift */,
+				658D85961B558A6700DFB949 /* URAddStoryViewController.xib */,
+			);
+			path = AddStory;
+			sourceTree = "<group>";
+		};
 		765863F8BACD5E4ED452B82C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +434,7 @@
 				65409FC81B4C842700344D75 /* Images.xcassets in Resources */,
 				6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */,
 				65409FEF1B4C84DE00344D75 /* URLoginViewController.xib in Resources */,
+				658D85981B558A6700DFB949 /* URAddStoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +488,7 @@
 				65409FC11B4C842700344D75 /* AppDelegate.swift in Sources */,
 				658D85901B554D3700DFB949 /* URStoriesTableViewCell.swift in Sources */,
 				658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */,
+				658D85971B558A6700DFB949 /* URAddStoryViewController.swift in Sources */,
 				659A7A911B4F59E500B56983 /* URCountry.swift in Sources */,
 				658D85931B554FD600DFB949 /* URStory.swift in Sources */,
 				659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */,

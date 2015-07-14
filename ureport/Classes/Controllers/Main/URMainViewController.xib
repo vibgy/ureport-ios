@@ -37,11 +37,11 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqd-qq-heE">
-                    <rect key="frame" x="243" y="427" width="69" height="69"/>
+                    <rect key="frame" x="252" y="436" width="60" height="60"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="69" id="jze-s8-i9J"/>
-                        <constraint firstAttribute="width" constant="69" id="y5W-yk-bTA"/>
+                        <constraint firstAttribute="height" constant="60" id="jze-s8-i9J"/>
+                        <constraint firstAttribute="width" constant="60" id="y5W-yk-bTA"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="34"/>
                     <state key="normal" title="+">
