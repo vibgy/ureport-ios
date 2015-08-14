@@ -18,9 +18,9 @@ class URForgotPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTextFieldView()
     }
 
+    
     //MARK: Button Events
     
     @IBAction func btSendPasswordTapped(sender: AnyObject) {
@@ -29,11 +29,6 @@ class URForgotPasswordViewController: UIViewController {
 
     //MARK: Class Methods
     
-    private func setupTextFieldView() {
-        self.viewEmail.layer.borderWidth = 1
-        
-        self.viewEmail.layer.borderColor = UIColor.grayColor().CGColor
-    }
-    
+
 
 }

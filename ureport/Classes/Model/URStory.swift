@@ -10,8 +10,12 @@ import UIKit
 
 class URStory: NSObject {
    
-    var name:String?
-    var author:String?
+    var title:String?
+    var content:String?
+    var createdDate:NSDate?
+    var user:URUser?
     var contributions:Int?
+    var markers:[URMarker]?
+    var image:String?
     
 }

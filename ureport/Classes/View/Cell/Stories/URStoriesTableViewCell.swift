@@ -36,8 +36,8 @@ class URStoriesTableViewCell: UITableViewCell {
     //MARK: Class Methods
     
     func setupCellWith(story:URStory){
-        self.lbAuthorName.text = story.name!
+        self.lbAuthorName.text = story.title!
         self.lbContributions.text = "\(story.contributions!) contributions"
-        self.lbAuthorName.text = "BY \(story.author!.uppercaseString)"
+        self.lbAuthorName.text = "BY \(story.user?.nickname!.uppercaseString)"
     }
 }

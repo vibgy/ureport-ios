@@ -19,11 +19,11 @@ class URLoginCredentialsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTextFieldView()
+        setupUI()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
@@ -38,12 +38,8 @@ class URLoginCredentialsViewController: UIViewController {
     
     //MARK: Class Methods
     
-    private func setupTextFieldView() {
-        self.viewPassword.layer.borderWidth = 1
-        self.viewLogin.layer.borderWidth = 1
-        
-        self.viewPassword.layer.borderColor = UIColor.grayColor().CGColor
-        self.viewLogin.layer.borderColor = UIColor.grayColor().CGColor
+    func setupUI() {
+        self.navigationController?.navigationBar.barTintColor = URConstant.Color.LOGIN_PRIMARY
     }
     
 }

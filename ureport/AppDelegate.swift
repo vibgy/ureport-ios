@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         viewController = URLoginViewController(nibName: "URLoginViewController", bundle: nil)
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.backgroundColor = UIColor.whiteColor()
+        self.window?.backgroundColor = URConstant.Color.YELLOW
         
         setupNavigationControllerWIthRootViewController(viewController!)
         
@@ -53,8 +53,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if self.navigation == nil {
             self.navigation = UINavigationController(rootViewController: viewController)
-            self.navigation!.navigationBar.tintColor = UIColor.blackColor()
-            self.navigation!.navigationBar.barTintColor = UIColor.whiteColor()
+            self.navigation!.navigationBar.tintColor = UIColor.whiteColor()
+            self.navigation!.navigationBar.barTintColor = URConstant.Color.PRIMARY
             self.navigation!.navigationBar.translucent = false
             self.navigation!.setNavigationBarHidden(true, animated: false)
         }

@@ -15,20 +15,53 @@
 		65409FF11B4C977600344D75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65409FF01B4C977600344D75 /* Foundation.framework */; };
 		65409FF51B4C9E7C00344D75 /* URUserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65409FF31B4C9E7C00344D75 /* URUserRegisterViewController.swift */; };
 		65409FF61B4C9E7C00344D75 /* URUserRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65409FF41B4C9E7C00344D75 /* URUserRegisterViewController.xib */; };
+		655690711B7CFA0B00525E00 /* URConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690701B7CFA0B00525E00 /* URConstant.swift */; };
+		655690761B7CFF5100525E00 /* ISImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690721B7CFF5100525E00 /* ISImageUtil.swift */; };
+		655690771B7CFF5100525E00 /* ISShareUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690731B7CFF5100525E00 /* ISShareUtil.swift */; };
+		655690781B7CFF5100525E00 /* ISViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690741B7CFF5100525E00 /* ISViewExtension.swift */; };
+		655690791B7CFF5100525E00 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690751B7CFF5100525E00 /* UIColorExtension.swift */; };
+		6556907B1B7D082400525E00 /* URCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556907A1B7D082400525E00 /* URCountry.swift */; };
+		6556907D1B7D083500525E00 /* URCountryProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556907C1B7D083500525E00 /* URCountryProgram.swift */; };
+		6556907F1B7D0A5200525E00 /* URUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556907E1B7D0A5200525E00 /* URUser.swift */; };
+		655690811B7D0AF200525E00 /* URGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690801B7D0AF200525E00 /* URGender.swift */; };
+		655690831B7D0EA200525E00 /* URType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690821B7D0EA200525E00 /* URType.swift */; };
+		655690851B7D0F6700525E00 /* URPoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690841B7D0F6700525E00 /* URPoll.swift */; };
+		655690871B7D101500525E00 /* URPollCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690861B7D101500525E00 /* URPollCategory.swift */; };
+		655690891B7D11E700525E00 /* URPollQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690881B7D11E700525E00 /* URPollQuestion.swift */; };
+		6556908B1B7D123E00525E00 /* URPollResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556908A1B7D123E00525E00 /* URPollResult.swift */; };
+		6556908D1B7D12BB00525E00 /* URWordsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556908C1B7D12BB00525E00 /* URWordsResult.swift */; };
+		6556908F1B7D135C00525E00 /* URNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556908E1B7D135C00525E00 /* URNotification.swift */; };
+		655690911B7D138400525E00 /* URNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690901B7D138400525E00 /* URNews.swift */; };
+		655690931B7D13F000525E00 /* URMultipleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690921B7D13F000525E00 /* URMultipleResult.swift */; };
+		655690951B7D142900525E00 /* UROpenQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690941B7D142900525E00 /* UROpenQuestion.swift */; };
+		655690971B7D144C00525E00 /* URMultipleChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690961B7D144C00525E00 /* URMultipleChoiceQuestion.swift */; };
+		655690991B7D147900525E00 /* URMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690981B7D147900525E00 /* URMarker.swift */; };
+		6556909B1B7D14A100525E00 /* URIndividualChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556909A1B7D14A100525E00 /* URIndividualChatRoom.swift */; };
+		6556909D1B7D14BA00525E00 /* URGroupChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556909C1B7D14BA00525E00 /* URGroupChatRoom.swift */; };
+		6556909F1B7D14C900525E00 /* URChatGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556909E1B7D14C900525E00 /* URChatGroup.swift */; };
+		655690A11B7D150D00525E00 /* URChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690A01B7D150D00525E00 /* URChatRoom.swift */; };
+		655690A31B7D157600525E00 /* URContribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690A21B7D157600525E00 /* URContribution.swift */; };
+		655690A51B7D159C00525E00 /* URContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690A41B7D159C00525E00 /* URContact.swift */; };
+		655690A71B7D15BA00525E00 /* URChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690A61B7D15BA00525E00 /* URChatMessage.swift */; };
+		655690AB1B7D170100525E00 /* ISRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655690AA1B7D170100525E00 /* ISRoundedButton.swift */; };
+		6556916B1B7D398900525E00 /* URMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556916A1B7D398900525E00 /* URMainViewController.swift */; };
+		6556916F1B7D3DA800525E00 /* URPollTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556916D1B7D3DA800525E00 /* URPollTextTableViewCell.swift */; };
+		655691701B7D3DA800525E00 /* URPollTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6556916E1B7D3DA800525E00 /* URPollTextTableViewCell.xib */; };
+		655691731B7D3DC500525E00 /* URPollChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691711B7D3DC500525E00 /* URPollChoiceTableViewCell.swift */; };
+		655691741B7D3DC500525E00 /* URPollChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691721B7D3DC500525E00 /* URPollChoiceTableViewCell.xib */; };
+		655691771B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691751B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift */; };
+		655691781B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */; };
 		6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6571915A1B4EC693002CA357 /* LaunchImages.xcassets */; };
 		658D857B1B5457CC00DFB949 /* URLoginCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */; };
 		658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */; };
 		658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */; };
 		658D85811B54597700DFB949 /* URForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D857F1B54597700DFB949 /* URForgotPasswordViewController.xib */; };
-		658D85841B5460FD00DFB949 /* URMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85821B5460FD00DFB949 /* URMainViewController.swift */; };
-		658D85851B5460FD00DFB949 /* URMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D85831B5460FD00DFB949 /* URMainViewController.xib */; };
 		658D858C1B554C9000DFB949 /* URStoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D858B1B554C9000DFB949 /* URStoriesTableViewController.swift */; };
 		658D85901B554D3700DFB949 /* URStoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D858E1B554D3700DFB949 /* URStoriesTableViewCell.swift */; };
 		658D85911B554D3700DFB949 /* URStoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D858F1B554D3700DFB949 /* URStoriesTableViewCell.xib */; };
 		658D85931B554FD600DFB949 /* URStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85921B554FD600DFB949 /* URStory.swift */; };
 		658D85971B558A6700DFB949 /* URAddStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85951B558A6700DFB949 /* URAddStoryViewController.swift */; };
 		658D85981B558A6700DFB949 /* URAddStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D85961B558A6700DFB949 /* URAddStoryViewController.xib */; };
-		659A7A911B4F59E500B56983 /* URCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A901B4F59E500B56983 /* URCountry.swift */; };
 		659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A921B4F6C3100B56983 /* URDateUtil.swift */; };
 		659A7A961B51EFA800B56983 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659A7A981B51EFA800B56983 /* Localizable.strings */; };
 		659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A9B1B51F6F700B56983 /* UITextField+Keyboard.swift */; };
@@ -60,20 +93,53 @@
 		65409FF01B4C977600344D75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65409FF31B4C9E7C00344D75 /* URUserRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URUserRegisterViewController.swift; sourceTree = "<group>"; };
 		65409FF41B4C9E7C00344D75 /* URUserRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URUserRegisterViewController.xib; sourceTree = "<group>"; };
+		655690701B7CFA0B00525E00 /* URConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URConstant.swift; sourceTree = "<group>"; };
+		655690721B7CFF5100525E00 /* ISImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISImageUtil.swift; sourceTree = "<group>"; };
+		655690731B7CFF5100525E00 /* ISShareUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISShareUtil.swift; sourceTree = "<group>"; };
+		655690741B7CFF5100525E00 /* ISViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISViewExtension.swift; sourceTree = "<group>"; };
+		655690751B7CFF5100525E00 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		6556907A1B7D082400525E00 /* URCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URCountry.swift; sourceTree = "<group>"; };
+		6556907C1B7D083500525E00 /* URCountryProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URCountryProgram.swift; sourceTree = "<group>"; };
+		6556907E1B7D0A5200525E00 /* URUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URUser.swift; sourceTree = "<group>"; };
+		655690801B7D0AF200525E00 /* URGender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URGender.swift; sourceTree = "<group>"; };
+		655690821B7D0EA200525E00 /* URType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URType.swift; sourceTree = "<group>"; };
+		655690841B7D0F6700525E00 /* URPoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPoll.swift; sourceTree = "<group>"; };
+		655690861B7D101500525E00 /* URPollCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollCategory.swift; sourceTree = "<group>"; };
+		655690881B7D11E700525E00 /* URPollQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollQuestion.swift; sourceTree = "<group>"; };
+		6556908A1B7D123E00525E00 /* URPollResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollResult.swift; sourceTree = "<group>"; };
+		6556908C1B7D12BB00525E00 /* URWordsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URWordsResult.swift; sourceTree = "<group>"; };
+		6556908E1B7D135C00525E00 /* URNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URNotification.swift; sourceTree = "<group>"; };
+		655690901B7D138400525E00 /* URNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URNews.swift; sourceTree = "<group>"; };
+		655690921B7D13F000525E00 /* URMultipleResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMultipleResult.swift; sourceTree = "<group>"; };
+		655690941B7D142900525E00 /* UROpenQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UROpenQuestion.swift; sourceTree = "<group>"; };
+		655690961B7D144C00525E00 /* URMultipleChoiceQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMultipleChoiceQuestion.swift; sourceTree = "<group>"; };
+		655690981B7D147900525E00 /* URMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMarker.swift; sourceTree = "<group>"; };
+		6556909A1B7D14A100525E00 /* URIndividualChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URIndividualChatRoom.swift; sourceTree = "<group>"; };
+		6556909C1B7D14BA00525E00 /* URGroupChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URGroupChatRoom.swift; sourceTree = "<group>"; };
+		6556909E1B7D14C900525E00 /* URChatGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URChatGroup.swift; sourceTree = "<group>"; };
+		655690A01B7D150D00525E00 /* URChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URChatRoom.swift; sourceTree = "<group>"; };
+		655690A21B7D157600525E00 /* URContribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URContribution.swift; sourceTree = "<group>"; };
+		655690A41B7D159C00525E00 /* URContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URContact.swift; sourceTree = "<group>"; };
+		655690A61B7D15BA00525E00 /* URChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URChatMessage.swift; sourceTree = "<group>"; };
+		655690AA1B7D170100525E00 /* ISRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISRoundedButton.swift; sourceTree = "<group>"; };
+		6556916A1B7D398900525E00 /* URMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMainViewController.swift; sourceTree = "<group>"; };
+		6556916D1B7D3DA800525E00 /* URPollTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollTextTableViewCell.swift; sourceTree = "<group>"; };
+		6556916E1B7D3DA800525E00 /* URPollTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URPollTextTableViewCell.xib; sourceTree = "<group>"; };
+		655691711B7D3DC500525E00 /* URPollChoiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		655691721B7D3DC500525E00 /* URPollChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URPollChoiceTableViewCell.xib; sourceTree = "<group>"; };
+		655691751B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollMultipleChoiceTableViewCell.swift; sourceTree = "<group>"; };
+		655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URPollMultipleChoiceTableViewCell.xib; sourceTree = "<group>"; };
 		6571915A1B4EC693002CA357 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
 		658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLoginCredentialsViewController.swift; sourceTree = "<group>"; };
 		658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLoginCredentialsViewController.xib; sourceTree = "<group>"; };
 		658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		658D857F1B54597700DFB949 /* URForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URForgotPasswordViewController.xib; sourceTree = "<group>"; };
-		658D85821B5460FD00DFB949 /* URMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMainViewController.swift; sourceTree = "<group>"; };
-		658D85831B5460FD00DFB949 /* URMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URMainViewController.xib; sourceTree = "<group>"; };
 		658D858B1B554C9000DFB949 /* URStoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStoriesTableViewController.swift; sourceTree = "<group>"; };
 		658D858E1B554D3700DFB949 /* URStoriesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStoriesTableViewCell.swift; sourceTree = "<group>"; };
 		658D858F1B554D3700DFB949 /* URStoriesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URStoriesTableViewCell.xib; sourceTree = "<group>"; };
 		658D85921B554FD600DFB949 /* URStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStory.swift; sourceTree = "<group>"; };
 		658D85951B558A6700DFB949 /* URAddStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URAddStoryViewController.swift; sourceTree = "<group>"; };
 		658D85961B558A6700DFB949 /* URAddStoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URAddStoryViewController.xib; sourceTree = "<group>"; };
-		659A7A901B4F59E500B56983 /* URCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URCountry.swift; sourceTree = "<group>"; };
 		659A7A921B4F6C3100B56983 /* URDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URDateUtil.swift; sourceTree = "<group>"; };
 		659A7A971B51EFA800B56983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659A7A991B51EFE100B56983 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -186,31 +252,43 @@
 		65409FE21B4C845200344D75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				655690AC1B7D394500525E00 /* Main */,
 				658D85941B558A5000DFB949 /* AddStory */,
 				658D85861B554A3300DFB949 /* Stories */,
 				658D857D1B54596000DFB949 /* ForgotPassword */,
 				658D85781B5457AD00DFB949 /* LoginCredentials */,
 				65409FF21B4C9E5C00344D75 /* UserRegister */,
 				65409FEB1B4C84BB00344D75 /* Login */,
-				65409FE31B4C845200344D75 /* Main */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		65409FE31B4C845200344D75 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				658D85821B5460FD00DFB949 /* URMainViewController.swift */,
-				658D85831B5460FD00DFB949 /* URMainViewController.xib */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		65409FE41B4C845200344D75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				659A7A901B4F59E500B56983 /* URCountry.swift */,
 				658D85921B554FD600DFB949 /* URStory.swift */,
+				6556907C1B7D083500525E00 /* URCountryProgram.swift */,
+				6556907E1B7D0A5200525E00 /* URUser.swift */,
+				655690801B7D0AF200525E00 /* URGender.swift */,
+				655690821B7D0EA200525E00 /* URType.swift */,
+				655690841B7D0F6700525E00 /* URPoll.swift */,
+				655690861B7D101500525E00 /* URPollCategory.swift */,
+				655690881B7D11E700525E00 /* URPollQuestion.swift */,
+				6556908A1B7D123E00525E00 /* URPollResult.swift */,
+				6556908C1B7D12BB00525E00 /* URWordsResult.swift */,
+				6556908E1B7D135C00525E00 /* URNotification.swift */,
+				655690901B7D138400525E00 /* URNews.swift */,
+				655690921B7D13F000525E00 /* URMultipleResult.swift */,
+				655690941B7D142900525E00 /* UROpenQuestion.swift */,
+				655690961B7D144C00525E00 /* URMultipleChoiceQuestion.swift */,
+				655690981B7D147900525E00 /* URMarker.swift */,
+				6556909A1B7D14A100525E00 /* URIndividualChatRoom.swift */,
+				6556909C1B7D14BA00525E00 /* URGroupChatRoom.swift */,
+				6556909E1B7D14C900525E00 /* URChatGroup.swift */,
+				655690A01B7D150D00525E00 /* URChatRoom.swift */,
+				655690A21B7D157600525E00 /* URContribution.swift */,
+				655690A41B7D159C00525E00 /* URContact.swift */,
+				655690A61B7D15BA00525E00 /* URChatMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,7 +303,14 @@
 		65409FE61B4C845200344D75 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6556907A1B7D082400525E00 /* URCountry.swift */,
+				655690721B7CFF5100525E00 /* ISImageUtil.swift */,
+				655690731B7CFF5100525E00 /* ISShareUtil.swift */,
+				655690741B7CFF5100525E00 /* ISViewExtension.swift */,
+				655690751B7CFF5100525E00 /* UIColorExtension.swift */,
 				659A7A921B4F6C3100B56983 /* URDateUtil.swift */,
+				655690701B7CFA0B00525E00 /* URConstant.swift */,
+				655690AA1B7D170100525E00 /* ISRoundedButton.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -248,6 +333,7 @@
 		65409FE91B4C845200344D75 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				6556916C1B7D3C8700525E00 /* Poll */,
 				658D858D1B554D1F00DFB949 /* Stories */,
 			);
 			path = Cell;
@@ -277,6 +363,27 @@
 				65409FF41B4C9E7C00344D75 /* URUserRegisterViewController.xib */,
 			);
 			path = UserRegister;
+			sourceTree = "<group>";
+		};
+		655690AC1B7D394500525E00 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6556916A1B7D398900525E00 /* URMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6556916C1B7D3C8700525E00 /* Poll */ = {
+			isa = PBXGroup;
+			children = (
+				6556916D1B7D3DA800525E00 /* URPollTextTableViewCell.swift */,
+				6556916E1B7D3DA800525E00 /* URPollTextTableViewCell.xib */,
+				655691711B7D3DC500525E00 /* URPollChoiceTableViewCell.swift */,
+				655691721B7D3DC500525E00 /* URPollChoiceTableViewCell.xib */,
+				655691751B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift */,
+				655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */,
+			);
+			path = Poll;
 			sourceTree = "<group>";
 		};
 		658D85781B5457AD00DFB949 /* LoginCredentials */ = {
@@ -427,10 +534,12 @@
 			files = (
 				658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */,
 				658D85911B554D3700DFB949 /* URStoriesTableViewCell.xib in Resources */,
+				655691781B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib in Resources */,
 				659A7A961B51EFA800B56983 /* Localizable.strings in Resources */,
+				655691741B7D3DC500525E00 /* URPollChoiceTableViewCell.xib in Resources */,
 				658D85811B54597700DFB949 /* URForgotPasswordViewController.xib in Resources */,
+				655691701B7D3DA800525E00 /* URPollTextTableViewCell.xib in Resources */,
 				65409FF61B4C9E7C00344D75 /* URUserRegisterViewController.xib in Resources */,
-				658D85851B5460FD00DFB949 /* URMainViewController.xib in Resources */,
 				65409FC81B4C842700344D75 /* Images.xcassets in Resources */,
 				6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */,
 				65409FEF1B4C84DE00344D75 /* URLoginViewController.xib in Resources */,
@@ -485,17 +594,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6556916F1B7D3DA800525E00 /* URPollTextTableViewCell.swift in Sources */,
 				65409FC11B4C842700344D75 /* AppDelegate.swift in Sources */,
+				655690851B7D0F6700525E00 /* URPoll.swift in Sources */,
 				658D85901B554D3700DFB949 /* URStoriesTableViewCell.swift in Sources */,
+				655690951B7D142900525E00 /* UROpenQuestion.swift in Sources */,
+				655690931B7D13F000525E00 /* URMultipleResult.swift in Sources */,
+				655690871B7D101500525E00 /* URPollCategory.swift in Sources */,
 				658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */,
+				6556908F1B7D135C00525E00 /* URNotification.swift in Sources */,
 				658D85971B558A6700DFB949 /* URAddStoryViewController.swift in Sources */,
-				659A7A911B4F59E500B56983 /* URCountry.swift in Sources */,
+				655690781B7CFF5100525E00 /* ISViewExtension.swift in Sources */,
+				655690791B7CFF5100525E00 /* UIColorExtension.swift in Sources */,
+				655690831B7D0EA200525E00 /* URType.swift in Sources */,
+				655690A51B7D159C00525E00 /* URContact.swift in Sources */,
+				655690991B7D147900525E00 /* URMarker.swift in Sources */,
+				655690761B7CFF5100525E00 /* ISImageUtil.swift in Sources */,
+				6556908B1B7D123E00525E00 /* URPollResult.swift in Sources */,
+				655690891B7D11E700525E00 /* URPollQuestion.swift in Sources */,
+				655690971B7D144C00525E00 /* URMultipleChoiceQuestion.swift in Sources */,
+				655690AB1B7D170100525E00 /* ISRoundedButton.swift in Sources */,
+				655690811B7D0AF200525E00 /* URGender.swift in Sources */,
 				658D85931B554FD600DFB949 /* URStory.swift in Sources */,
+				6556907D1B7D083500525E00 /* URCountryProgram.swift in Sources */,
+				655690911B7D138400525E00 /* URNews.swift in Sources */,
+				6556909D1B7D14BA00525E00 /* URGroupChatRoom.swift in Sources */,
+				655690A31B7D157600525E00 /* URContribution.swift in Sources */,
+				655691771B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift in Sources */,
+				655690711B7CFA0B00525E00 /* URConstant.swift in Sources */,
 				659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */,
+				655690A71B7D15BA00525E00 /* URChatMessage.swift in Sources */,
+				6556916B1B7D398900525E00 /* URMainViewController.swift in Sources */,
+				6556909F1B7D14C900525E00 /* URChatGroup.swift in Sources */,
+				655690771B7CFF5100525E00 /* ISShareUtil.swift in Sources */,
+				6556908D1B7D12BB00525E00 /* URWordsResult.swift in Sources */,
 				658D858C1B554C9000DFB949 /* URStoriesTableViewController.swift in Sources */,
+				655690A11B7D150D00525E00 /* URChatRoom.swift in Sources */,
+				655691731B7D3DC500525E00 /* URPollChoiceTableViewCell.swift in Sources */,
 				65409FF51B4C9E7C00344D75 /* URUserRegisterViewController.swift in Sources */,
+				6556907B1B7D082400525E00 /* URCountry.swift in Sources */,
+				6556909B1B7D14A100525E00 /* URIndividualChatRoom.swift in Sources */,
 				65409FEE1B4C84DE00344D75 /* URLoginViewController.swift in Sources */,
-				658D85841B5460FD00DFB949 /* URMainViewController.swift in Sources */,
+				6556907F1B7D0A5200525E00 /* URUser.swift in Sources */,
 				659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */,
 				658D857B1B5457CC00DFB949 /* URLoginCredentialsViewController.swift in Sources */,
 			);

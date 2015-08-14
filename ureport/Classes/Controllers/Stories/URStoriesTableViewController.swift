@@ -30,9 +30,9 @@ class URStoriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(URStoriesTableViewCell.self), forIndexPath: indexPath) as! URStoriesTableViewCell
         
         var story:URStory! = URStory()
-        story.name = "Increasing Immunization Coverage in Uganda: The Community Problem-solving and Strategy Development Approach"
+        story.title = "Increasing Immunization Coverage in Uganda: The Community Problem-solving and Strategy Development Approach"
         story.contributions = 2
-        story.author = "Daniel"
+        story.user?.nickname = "Daniel"
         cell.setupCellWith(story)
         
         return cell

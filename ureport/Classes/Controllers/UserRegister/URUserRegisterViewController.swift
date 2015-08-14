@@ -24,6 +24,8 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var txtCountry: UITextField!
     @IBOutlet weak var txtGender: UITextField!
     
+    var color:UIColor?
+    
     var pickerGender:UIPickerView?
     var pickerDate:UIDatePicker?
     var pickerCities:UIPickerView?
@@ -39,10 +41,18 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
         self.navigationController! .setNavigationBarHidden(false, animated: false)
 
         setupUI()
-        setupTextFieldView()
         checkUserCountry()
     }
     
+    
+    init(color:UIColor) {
+        self.color = color
+        super.init(nibName: "URUserRegisterViewController", bundle: nil)
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     //MARK: Button Events
     
@@ -58,6 +68,10 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     private func setupUI() {
+        
+        self.navigationController?.navigationBar.barTintColor = self.color
+        self.btNext.backgroundColor = self.color
+        
         self.pickerDate = UIDatePicker()
         self.pickerGender = UIPickerView()
         self.pickerCities = UIPickerView()
@@ -82,22 +96,6 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
         var datePicker:UIDatePicker? = sender as? UIDatePicker
         self.birthDay = datePicker!.date
         self.txtBirthDay.text = URDateUtil.brithDayFormatter(self.birthDay!)
-    }
-    
-    private func setupTextFieldView() {
-        self.viewPassword.layer.borderWidth = 1
-        self.viewNick.layer.borderWidth = 1
-        self.viewEmail.layer.borderWidth = 1
-        self.viewBirthDay.layer.borderWidth = 1
-        self.viewCountry.layer.borderWidth = 1
-        self.viewGender.layer.borderWidth = 1
-        
-        self.viewPassword.layer.borderColor = UIColor.grayColor().CGColor
-        self.viewNick.layer.borderColor = UIColor.grayColor().CGColor
-        self.viewEmail.layer.borderColor = UIColor.grayColor().CGColor
-        self.viewBirthDay.layer.borderColor = UIColor.grayColor().CGColor
-        self.viewCountry.layer.borderColor = UIColor.grayColor().CGColor
-        self.viewGender.layer.borderColor = UIColor.grayColor().CGColor
     }
     
     //MARK: TextFieldDelegate
