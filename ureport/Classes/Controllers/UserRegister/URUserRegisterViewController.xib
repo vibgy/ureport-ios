@@ -33,6 +33,43 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oat-W2-E0v">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
                             <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-AT-5ZB">
+                                    <rect key="frame" x="8" y="10" width="304" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nickname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-wB-GdK">
+                                            <rect key="frame" x="0.0" y="18" width="304" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="HY2-sb-LhI"/>
+                                            </connections>
+                                        </textField>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-jg-YPK">
+                                            <rect key="frame" x="0.0" y="49" width="304" height="1"/>
+                                            <color key="backgroundColor" red="0.87033616499999999" green="0.86600613439999996" blue="0.87466619570000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="bW7-bT-or1"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="BwM-wB-GdK" secondAttribute="bottom" id="3sd-rq-h6L"/>
+                                        <constraint firstItem="H8j-jg-YPK" firstAttribute="top" secondItem="BwM-wB-GdK" secondAttribute="bottom" constant="4" id="HK6-6t-hrM"/>
+                                        <constraint firstAttribute="height" constant="50" id="Hdb-TR-8nd"/>
+                                        <constraint firstAttribute="bottom" secondItem="H8j-jg-YPK" secondAttribute="bottom" id="Kxj-gu-3uy"/>
+                                        <constraint firstItem="H8j-jg-YPK" firstAttribute="leading" secondItem="h2d-AT-5ZB" secondAttribute="leading" id="SCp-sY-q96"/>
+                                        <constraint firstItem="BwM-wB-GdK" firstAttribute="top" secondItem="h2d-AT-5ZB" secondAttribute="top" constant="18" id="auC-0U-oBb"/>
+                                        <constraint firstAttribute="trailing" secondItem="BwM-wB-GdK" secondAttribute="trailing" id="h9i-lk-Faz"/>
+                                        <constraint firstItem="BwM-wB-GdK" firstAttribute="leading" secondItem="h2d-AT-5ZB" secondAttribute="leading" id="n5e-oi-5ik"/>
+                                        <constraint firstAttribute="trailing" secondItem="H8j-jg-YPK" secondAttribute="trailing" id="zbr-1f-KXg"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="3sd-rq-h6L"/>
+                                        </mask>
+                                    </variation>
+                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xX-UM-5xr">
                                     <rect key="frame" x="8" y="68" width="304" height="50"/>
                                     <subviews>
@@ -267,8 +304,12 @@
                                 <constraint firstItem="0sd-FY-ivm" firstAttribute="leading" secondItem="oat-W2-E0v" secondAttribute="leading" constant="8" id="D89-oK-BFd"/>
                                 <constraint firstAttribute="trailing" secondItem="fIP-tQ-MsY" secondAttribute="trailing" constant="8" id="Fac-fm-cYM"/>
                                 <constraint firstItem="fIP-tQ-MsY" firstAttribute="leading" secondItem="oat-W2-E0v" secondAttribute="leading" constant="8" id="JIT-fy-JK8"/>
+                                <constraint firstItem="h2d-AT-5ZB" firstAttribute="leading" secondItem="oat-W2-E0v" secondAttribute="leading" constant="8" id="SG2-ym-sja"/>
                                 <constraint firstItem="2co-ah-Oxu" firstAttribute="top" secondItem="fIP-tQ-MsY" secondAttribute="bottom" constant="8" id="SOV-Qz-Th6"/>
+                                <constraint firstItem="h2d-AT-5ZB" firstAttribute="top" secondItem="oat-W2-E0v" secondAttribute="top" constant="10" id="UI8-d1-I5i"/>
+                                <constraint firstAttribute="trailing" secondItem="h2d-AT-5ZB" secondAttribute="trailing" constant="8" id="XBh-a9-U3i"/>
                                 <constraint firstAttribute="trailing" secondItem="iRc-nZ-GkA" secondAttribute="trailing" constant="8" id="YPU-If-Dgu"/>
+                                <constraint firstItem="6xX-UM-5xr" firstAttribute="top" secondItem="h2d-AT-5ZB" secondAttribute="bottom" constant="8" id="Ybb-fn-NDV"/>
                                 <constraint firstAttribute="trailing" secondItem="2co-ah-Oxu" secondAttribute="trailing" constant="8" id="bhs-Q9-qqn"/>
                                 <constraint firstItem="fIP-tQ-MsY" firstAttribute="top" secondItem="6xX-UM-5xr" secondAttribute="bottom" constant="8" id="fYN-c3-qDe"/>
                                 <constraint firstItem="0sd-FY-ivm" firstAttribute="top" secondItem="iRc-nZ-GkA" secondAttribute="bottom" constant="8" id="gZb-8f-gdM"/>
@@ -276,56 +317,15 @@
                                 <constraint firstAttribute="trailing" secondItem="6xX-UM-5xr" secondAttribute="trailing" constant="8" id="huj-lj-4lf"/>
                                 <constraint firstItem="iRc-nZ-GkA" firstAttribute="leading" secondItem="oat-W2-E0v" secondAttribute="leading" constant="8" id="jra-Le-cS3"/>
                                 <constraint firstAttribute="height" constant="430" id="nto-mZ-Wyi"/>
-                                <constraint firstItem="6xX-UM-5xr" firstAttribute="top" secondItem="oat-W2-E0v" secondAttribute="top" constant="68" id="u1p-Hg-BpI"/>
                             </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2d-AT-5ZB">
-                            <rect key="frame" x="10" y="10" width="304" height="50"/>
-                            <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nickname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-wB-GdK">
-                                    <rect key="frame" x="0.0" y="18" width="304" height="27"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="-1" id="HY2-sb-LhI"/>
-                                    </connections>
-                                </textField>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8j-jg-YPK">
-                                    <rect key="frame" x="0.0" y="49" width="304" height="1"/>
-                                    <color key="backgroundColor" red="0.87033616499999999" green="0.86600613439999996" blue="0.87466619570000004" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="1" id="bW7-bT-or1"/>
-                                    </constraints>
-                                </view>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="BwM-wB-GdK" secondAttribute="bottom" id="3sd-rq-h6L"/>
-                                <constraint firstItem="H8j-jg-YPK" firstAttribute="top" secondItem="BwM-wB-GdK" secondAttribute="bottom" constant="4" id="HK6-6t-hrM"/>
-                                <constraint firstAttribute="height" constant="50" id="Hdb-TR-8nd"/>
-                                <constraint firstAttribute="bottom" secondItem="H8j-jg-YPK" secondAttribute="bottom" id="Kxj-gu-3uy"/>
-                                <constraint firstItem="H8j-jg-YPK" firstAttribute="leading" secondItem="h2d-AT-5ZB" secondAttribute="leading" id="SCp-sY-q96"/>
-                                <constraint firstItem="BwM-wB-GdK" firstAttribute="top" secondItem="h2d-AT-5ZB" secondAttribute="top" constant="18" id="auC-0U-oBb"/>
-                                <constraint firstAttribute="trailing" secondItem="BwM-wB-GdK" secondAttribute="trailing" id="h9i-lk-Faz"/>
-                                <constraint firstItem="BwM-wB-GdK" firstAttribute="leading" secondItem="h2d-AT-5ZB" secondAttribute="leading" id="n5e-oi-5ik"/>
-                                <constraint firstAttribute="trailing" secondItem="H8j-jg-YPK" secondAttribute="trailing" id="zbr-1f-KXg"/>
-                            </constraints>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="3sd-rq-h6L"/>
-                                </mask>
-                            </variation>
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="h2d-AT-5ZB" secondAttribute="trailing" constant="6" id="9X5-UP-WyR"/>
                         <constraint firstItem="oat-W2-E0v" firstAttribute="leading" secondItem="iQ1-OO-om4" secondAttribute="leading" id="GtR-zh-GUA"/>
                         <constraint firstAttribute="trailing" secondItem="oat-W2-E0v" secondAttribute="trailing" id="XGr-4B-Iyf"/>
                         <constraint firstAttribute="bottom" secondItem="oat-W2-E0v" secondAttribute="bottom" id="Zdg-49-5RZ"/>
-                        <constraint firstItem="h2d-AT-5ZB" firstAttribute="leading" secondItem="iQ1-OO-om4" secondAttribute="leading" constant="10" id="iAs-CU-bVu"/>
                         <constraint firstItem="oat-W2-E0v" firstAttribute="top" secondItem="iQ1-OO-om4" secondAttribute="top" id="kA6-MP-fQG"/>
                         <constraint firstAttribute="width" secondItem="oat-W2-E0v" secondAttribute="width" id="okq-ro-xBk"/>
-                        <constraint firstItem="h2d-AT-5ZB" firstAttribute="top" secondItem="iQ1-OO-om4" secondAttribute="top" constant="10" id="tIf-9j-1o4"/>
                     </constraints>
                 </scrollView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpG-II-qEK" customClass="ISRoundedButton" customModule="ureport" customModuleProvider="target">

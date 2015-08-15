@@ -13,8 +13,17 @@ class URStoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbAuthorName: UILabel!
     @IBOutlet weak var lbContributions: UILabel!
+    @IBOutlet weak var lbMarkers: UILabel!
+    @IBOutlet weak var imgStory: UIImageView!
+    @IBOutlet weak var lbDescription: UILabel!
+    @IBOutlet weak var btContribute: UIButton!
+    @IBOutlet weak var imgUser: UIImageView!
+    @IBOutlet weak var bgView: UIView!
     
+    @IBOutlet weak var contentViewBottom: NSLayoutConstraint!
+    @IBOutlet weak var imgStoryHeight: NSLayoutConstraint!
     
+    var viewController:UITableViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,14 +32,14 @@ class URStoriesTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        super.selectionStyle = UITableViewCellSelectionStyle.None
         // Configure the view for the selected state
     }
     
     //MARK: Button Events
     
-    @IBAction func btReadFullStoryTapped(sender: AnyObject) {
-        
+    @IBAction func btContributeTapped(sender: AnyObject) {
+        viewController?.navigationController?.pushViewController(URAddStoryViewController(nibName:"URAddStoryViewController",bundle:nil), animated: true)
     }
     
     //MARK: Class Methods

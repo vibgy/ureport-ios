@@ -51,6 +51,13 @@
 		655691741B7D3DC500525E00 /* URPollChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691721B7D3DC500525E00 /* URPollChoiceTableViewCell.xib */; };
 		655691771B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691751B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift */; };
 		655691781B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */; };
+		6556917C1B7D860D00525E00 /* URPollTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556917A1B7D860D00525E00 /* URPollTableViewController.swift */; };
+		6556917F1B7E2A8F00525E00 /* URRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556917E1B7E2A8F00525E00 /* URRoundedView.swift */; };
+		655691831B7E668B00525E00 /* URMarkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691811B7E668B00525E00 /* URMarkerTableViewCell.swift */; };
+		655691841B7E668B00525E00 /* URMarkerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691821B7E668B00525E00 /* URMarkerTableViewCell.xib */; };
+		655691871B7E67AB00525E00 /* URMarkerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691861B7E67AB00525E00 /* URMarkerTableViewController.swift */; };
+		6556918A1B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691881B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift */; };
+		6556918B1B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691891B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib */; };
 		6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6571915A1B4EC693002CA357 /* LaunchImages.xcassets */; };
 		658D857B1B5457CC00DFB949 /* URLoginCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */; };
 		658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */; };
@@ -62,6 +69,7 @@
 		658D85931B554FD600DFB949 /* URStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85921B554FD600DFB949 /* URStory.swift */; };
 		658D85971B558A6700DFB949 /* URAddStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85951B558A6700DFB949 /* URAddStoryViewController.swift */; };
 		658D85981B558A6700DFB949 /* URAddStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D85961B558A6700DFB949 /* URAddStoryViewController.xib */; };
+		659A20D41B7ECD6C00D02C69 /* URPollTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659A20D21B7ECD6C00D02C69 /* URPollTableViewController.xib */; };
 		659A7A931B4F6C3100B56983 /* URDateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A921B4F6C3100B56983 /* URDateUtil.swift */; };
 		659A7A961B51EFA800B56983 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659A7A981B51EFA800B56983 /* Localizable.strings */; };
 		659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A7A9B1B51F6F700B56983 /* UITextField+Keyboard.swift */; };
@@ -129,6 +137,13 @@
 		655691721B7D3DC500525E00 /* URPollChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URPollChoiceTableViewCell.xib; sourceTree = "<group>"; };
 		655691751B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollMultipleChoiceTableViewCell.swift; sourceTree = "<group>"; };
 		655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URPollMultipleChoiceTableViewCell.xib; sourceTree = "<group>"; };
+		6556917A1B7D860D00525E00 /* URPollTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollTableViewController.swift; sourceTree = "<group>"; };
+		6556917E1B7E2A8F00525E00 /* URRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URRoundedView.swift; sourceTree = "<group>"; };
+		655691811B7E668B00525E00 /* URMarkerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMarkerTableViewCell.swift; sourceTree = "<group>"; };
+		655691821B7E668B00525E00 /* URMarkerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URMarkerTableViewCell.xib; sourceTree = "<group>"; };
+		655691861B7E67AB00525E00 /* URMarkerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMarkerTableViewController.swift; sourceTree = "<group>"; };
+		655691881B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URAddMarkerTableViewCell.swift; sourceTree = "<group>"; };
+		655691891B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URAddMarkerTableViewCell.xib; sourceTree = "<group>"; };
 		6571915A1B4EC693002CA357 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
 		658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLoginCredentialsViewController.swift; sourceTree = "<group>"; };
 		658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLoginCredentialsViewController.xib; sourceTree = "<group>"; };
@@ -140,6 +155,8 @@
 		658D85921B554FD600DFB949 /* URStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URStory.swift; sourceTree = "<group>"; };
 		658D85951B558A6700DFB949 /* URAddStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URAddStoryViewController.swift; sourceTree = "<group>"; };
 		658D85961B558A6700DFB949 /* URAddStoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URAddStoryViewController.xib; sourceTree = "<group>"; };
+		659A20D01B7EC9EF00D02C69 /* ureport-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ureport-Bridging-Header.h"; sourceTree = "<group>"; };
+		659A20D21B7ECD6C00D02C69 /* URPollTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URPollTableViewController.xib; sourceTree = "<group>"; };
 		659A7A921B4F6C3100B56983 /* URDateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URDateUtil.swift; sourceTree = "<group>"; };
 		659A7A971B51EFA800B56983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659A7A991B51EFE100B56983 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -205,6 +222,7 @@
 		65409FBE1B4C842700344D75 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				659A20D01B7EC9EF00D02C69 /* ureport-Bridging-Header.h */,
 				65409FBF1B4C842700344D75 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -252,6 +270,8 @@
 		65409FE21B4C845200344D75 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				655691851B7E679800525E00 /* Marker */,
+				655691791B7D85DD00525E00 /* Poll */,
 				655690AC1B7D394500525E00 /* Main */,
 				658D85941B558A5000DFB949 /* AddStory */,
 				658D85861B554A3300DFB949 /* Stories */,
@@ -311,6 +331,7 @@
 				659A7A921B4F6C3100B56983 /* URDateUtil.swift */,
 				655690701B7CFA0B00525E00 /* URConstant.swift */,
 				655690AA1B7D170100525E00 /* ISRoundedButton.swift */,
+				6556917E1B7E2A8F00525E00 /* URRoundedView.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -333,6 +354,7 @@
 		65409FE91B4C845200344D75 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				655691801B7E667400525E00 /* Marker */,
 				6556916C1B7D3C8700525E00 /* Poll */,
 				658D858D1B554D1F00DFB949 /* Stories */,
 			);
@@ -384,6 +406,34 @@
 				655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */,
 			);
 			path = Poll;
+			sourceTree = "<group>";
+		};
+		655691791B7D85DD00525E00 /* Poll */ = {
+			isa = PBXGroup;
+			children = (
+				6556917A1B7D860D00525E00 /* URPollTableViewController.swift */,
+				659A20D21B7ECD6C00D02C69 /* URPollTableViewController.xib */,
+			);
+			path = Poll;
+			sourceTree = "<group>";
+		};
+		655691801B7E667400525E00 /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				655691811B7E668B00525E00 /* URMarkerTableViewCell.swift */,
+				655691821B7E668B00525E00 /* URMarkerTableViewCell.xib */,
+				655691881B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift */,
+				655691891B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib */,
+			);
+			path = Marker;
+			sourceTree = "<group>";
+		};
+		655691851B7E679800525E00 /* Marker */ = {
+			isa = PBXGroup;
+			children = (
+				655691861B7E67AB00525E00 /* URMarkerTableViewController.swift */,
+			);
+			path = Marker;
 			sourceTree = "<group>";
 		};
 		658D85781B5457AD00DFB949 /* LoginCredentials */ = {
@@ -532,6 +582,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6556918B1B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib in Resources */,
 				658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */,
 				658D85911B554D3700DFB949 /* URStoriesTableViewCell.xib in Resources */,
 				655691781B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib in Resources */,
@@ -543,7 +594,9 @@
 				65409FC81B4C842700344D75 /* Images.xcassets in Resources */,
 				6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */,
 				65409FEF1B4C84DE00344D75 /* URLoginViewController.xib in Resources */,
+				659A20D41B7ECD6C00D02C69 /* URPollTableViewController.xib in Resources */,
 				658D85981B558A6700DFB949 /* URAddStoryViewController.xib in Resources */,
+				655691841B7E668B00525E00 /* URMarkerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +654,7 @@
 				655690951B7D142900525E00 /* UROpenQuestion.swift in Sources */,
 				655690931B7D13F000525E00 /* URMultipleResult.swift in Sources */,
 				655690871B7D101500525E00 /* URPollCategory.swift in Sources */,
+				6556917F1B7E2A8F00525E00 /* URRoundedView.swift in Sources */,
 				658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */,
 				6556908F1B7D135C00525E00 /* URNotification.swift in Sources */,
 				658D85971B558A6700DFB949 /* URAddStoryViewController.swift in Sources */,
@@ -613,6 +667,7 @@
 				6556908B1B7D123E00525E00 /* URPollResult.swift in Sources */,
 				655690891B7D11E700525E00 /* URPollQuestion.swift in Sources */,
 				655690971B7D144C00525E00 /* URMultipleChoiceQuestion.swift in Sources */,
+				655691871B7E67AB00525E00 /* URMarkerTableViewController.swift in Sources */,
 				655690AB1B7D170100525E00 /* ISRoundedButton.swift in Sources */,
 				655690811B7D0AF200525E00 /* URGender.swift in Sources */,
 				658D85931B554FD600DFB949 /* URStory.swift in Sources */,
@@ -621,14 +676,17 @@
 				6556909D1B7D14BA00525E00 /* URGroupChatRoom.swift in Sources */,
 				655690A31B7D157600525E00 /* URContribution.swift in Sources */,
 				655691771B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift in Sources */,
+				655691831B7E668B00525E00 /* URMarkerTableViewCell.swift in Sources */,
 				655690711B7CFA0B00525E00 /* URConstant.swift in Sources */,
 				659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */,
 				655690A71B7D15BA00525E00 /* URChatMessage.swift in Sources */,
 				6556916B1B7D398900525E00 /* URMainViewController.swift in Sources */,
 				6556909F1B7D14C900525E00 /* URChatGroup.swift in Sources */,
 				655690771B7CFF5100525E00 /* ISShareUtil.swift in Sources */,
+				6556917C1B7D860D00525E00 /* URPollTableViewController.swift in Sources */,
 				6556908D1B7D12BB00525E00 /* URWordsResult.swift in Sources */,
 				658D858C1B554C9000DFB949 /* URStoriesTableViewController.swift in Sources */,
+				6556918A1B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift in Sources */,
 				655690A11B7D150D00525E00 /* URChatRoom.swift in Sources */,
 				655691731B7D3DC500525E00 /* URPollChoiceTableViewCell.swift in Sources */,
 				65409FF51B4C9E7C00344D75 /* URUserRegisterViewController.swift in Sources */,
@@ -765,6 +823,7 @@
 				INFOPLIST_FILE = ureport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ureport/ureport-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -777,6 +836,7 @@
 				INFOPLIST_FILE = ureport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ureport/ureport-Bridging-Header.h";
 			};
 			name = Release;
 		};

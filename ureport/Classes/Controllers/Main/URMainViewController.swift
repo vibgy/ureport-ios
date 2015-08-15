@@ -20,8 +20,14 @@ class URMainViewController: UITabBarController {
     func setupViewControllers() {
         
         let storiesTableViewController:URStoriesTableViewController = URStoriesTableViewController()
+        storiesTableViewController.title = "Stories"
+        storiesTableViewController.tabBarItem.image = UIImage(named: "icon_stories")
         
-        self.viewControllers = [storiesTableViewController]
+        let pollsTableViewController:URPollTableViewController = URPollTableViewController(nibName:"URPollTableViewController",bundle:nil)
+        pollsTableViewController.title = "Polls"
+        pollsTableViewController.tabBarItem.image = UIImage(named: "icon_polls")
+        
+        self.viewControllers = [storiesTableViewController,pollsTableViewController]
     }
 
 }
