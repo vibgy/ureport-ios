@@ -23,6 +23,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     @IBOutlet weak var txtBirthDay: UITextField!
     @IBOutlet weak var txtCountry: UITextField!
     @IBOutlet weak var txtGender: UITextField!
+    @IBOutlet weak var txtState: UITextField!
     
     var color:UIColor?
     
@@ -32,7 +33,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     var country:URCountry?
     var birthDay:NSDate?
-    
+    var gender:URGender?
     let genders:[String]? = [NSLocalizedString("male",comment:""),NSLocalizedString("female",comment:"")]
     let countries:[URCountry]? = URCountry.getCountries() as? [URCountry]
     
@@ -57,10 +58,51 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     //MARK: Button Events
     
     @IBAction func btNextTapped(sender: AnyObject) {
-        self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)        
+        
+        if let textField = self.view.findTextFieldEmptyInView(self.view) {
+            UIAlertView(title: nil, message: "The field \(textField.placeholder!) is empty", delegate: self, cancelButtonTitle: "OK").show()
+        }else{
+        
+            var user:URUser = URUser()
+            
+            user.nickname = self.txtNick.text
+            user.password = self.txtPassword.text
+            user.email = self.txtEmail.text
+            user.gender = gender
+            user.birthday = self.birthDay
+            user.country = country?.code
+            user.state = self.txtState.text
+
+            URFireBaseManager.sharedInstance().createUser(user.email, password: user.password,
+                withValueCompletionBlock: { error, result in
+                    
+                    if error != nil {
+                        println(error)
+                    } else {
+                        let uid = result["uid"] as? String
+                        user.key = uid
+                        
+                        URFireBaseManager.sharedInstance().childByAppendingPath(URUser.path()).childByAppendingPath(user.key).setValue(user)
+                        
+                        URUser.login(user, completion: { (success) -> Void in
+                            if success {
+                                self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)                                
+                                println("usuario logado")
+                            }else {
+                                println("usuario nao encontrado")
+                            }
+                        })
+                        
+                        println("Successfully created user account with uid: \(uid)")
+                    }
+            })
+            
+            
+        }
+        
     }
     
-    //MARK: Class Methods
+    //MARK: Class Methods   
     
     private func checkUserCountry() {
         self.country = URCountry.getCurrentURCountry()        
@@ -140,8 +182,14 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == self.pickerCities {
-            self.txtCountry.text = (URCountry.getCountries()[row] as! URCountry).name!
+            country = (URCountry.getCountries()[row] as! URCountry)
+            self.txtCountry.text = country!.name
         }else if pickerView == self.pickerGender {
+            if row == 0 {
+                gender = .Male
+            }else {
+                gender = .Female
+            }
             self.txtGender.text = self.genders![row]
         }
     }

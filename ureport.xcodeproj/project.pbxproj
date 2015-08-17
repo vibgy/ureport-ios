@@ -59,6 +59,7 @@
 		6556918A1B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691881B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift */; };
 		6556918B1B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691891B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib */; };
 		6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6571915A1B4EC693002CA357 /* LaunchImages.xcassets */; };
+		658949B21B8255C60087F361 /* URFireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658949B11B8255C60087F361 /* URFireBaseManager.swift */; };
 		658D857B1B5457CC00DFB949 /* URLoginCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */; };
 		658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */; };
 		658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */; };
@@ -145,6 +146,7 @@
 		655691881B7E6A0D00525E00 /* URAddMarkerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URAddMarkerTableViewCell.swift; sourceTree = "<group>"; };
 		655691891B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URAddMarkerTableViewCell.xib; sourceTree = "<group>"; };
 		6571915A1B4EC693002CA357 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
+		658949B11B8255C60087F361 /* URFireBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URFireBaseManager.swift; sourceTree = "<group>"; };
 		658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLoginCredentialsViewController.swift; sourceTree = "<group>"; };
 		658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLoginCredentialsViewController.xib; sourceTree = "<group>"; };
 		658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 				655690701B7CFA0B00525E00 /* URConstant.swift */,
 				655690AA1B7D170100525E00 /* ISRoundedButton.swift */,
 				6556917E1B7E2A8F00525E00 /* URRoundedView.swift */,
+				658949B11B8255C60087F361 /* URFireBaseManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -676,6 +679,7 @@
 				6556909D1B7D14BA00525E00 /* URGroupChatRoom.swift in Sources */,
 				655690A31B7D157600525E00 /* URContribution.swift in Sources */,
 				655691771B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift in Sources */,
+				658949B21B8255C60087F361 /* URFireBaseManager.swift in Sources */,
 				655691831B7E668B00525E00 /* URMarkerTableViewCell.swift in Sources */,
 				655690711B7CFA0B00525E00 /* URConstant.swift in Sources */,
 				659A7A9C1B51F6F700B56983 /* UITextField+Keyboard.swift in Sources */,

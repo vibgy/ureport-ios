@@ -28,6 +28,5 @@ struct URConstant {
         static let CONFIRM_INFO_PRIMARY = UIColor(rgba: "#01d1db")
         static let CONFIRM_INFO_PRIMARY_DARK = UIColor(rgba: "#00bbc2")
     }
-
     
 }

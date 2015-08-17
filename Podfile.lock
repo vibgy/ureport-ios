@@ -1,10 +1,13 @@
 PODS:
+  - Firebase (2.3.3)
   - TPKeyboardAvoiding (1.2.8)
 
 DEPENDENCIES:
+  - Firebase (>= 2.3.3)
   - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
+  Firebase: 2db60272f68ce40c7d47e5ae6eddc16977c65d4c
   TPKeyboardAvoiding: f1ef0028fe9ba98ef2871cf55b4bbc39cae0267b
 
 COCOAPODS: 0.38.2

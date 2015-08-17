@@ -22,4 +22,20 @@ extension UIView {
         return image
     }
     
+    func findTextFieldEmptyInView(input: UIView) -> UITextField? {
+        if input.isKindOfClass(UITextField) {
+            var textField:UITextField! = input as! UITextField
+            if textField.text.isEmpty {
+                return textField
+            }
+        }
+
+        for view in input.subviews {
+            if let foundView = self.findTextFieldEmptyInView(view as! UIView) {
+                return foundView
+            }
+        }
+        return nil
+    }
+    
 }
