@@ -13,6 +13,12 @@ class URMainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewControllers()
+        self.title = "U-Report"
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     //MARK: Class Methods
@@ -25,9 +31,13 @@ class URMainViewController: UITabBarController {
         
         let pollsTableViewController:URPollTableViewController = URPollTableViewController(nibName:"URPollTableViewController",bundle:nil)
         pollsTableViewController.title = "Polls"
-        pollsTableViewController.tabBarItem.image = UIImage(named: "icon_polls")
+        pollsTableViewController.tabBarItem.image = UIImage(named: "icon_polls")     
         
         self.viewControllers = [storiesTableViewController,pollsTableViewController]
     }
-
+    
+    func addLeftButtonMenuInViewController(viewController:UIViewController){
+        var image:UIImage = ISImageUtil.resizeImage(UIImage(named: "icon_burgermenu")!,scaledToSize: CGSize(width: 20, height: 16))
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self, action: "toggleMenu")
+    }
 }

@@ -40,7 +40,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController! .setNavigationBarHidden(false, animated: false)
-
+        
         setupUI()
         checkUserCountry()
     }
@@ -62,32 +62,36 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
         if let textField = self.view.findTextFieldEmptyInView(self.view) {
             UIAlertView(title: nil, message: "The field \(textField.placeholder!) is empty", delegate: self, cancelButtonTitle: "OK").show()
         }else{
-        
+            
             var user:URUser = URUser()
             
             user.nickname = self.txtNick.text
             user.password = self.txtPassword.text
             user.email = self.txtEmail.text
             user.gender = gender
-            user.birthday = self.birthDay
+//            user.birthday = self.birthDay
             user.country = country?.code
             user.state = self.txtState.text
-
+            
             URFireBaseManager.sharedInstance().createUser(user.email, password: user.password,
                 withValueCompletionBlock: { error, result in
                     
                     if error != nil {
-                        println(error)
+//                        UIAlertView(title: nil, message: "The field \(textField.placeholder!) is empty", delegate: self, cancelButtonTitle: "OK").show()
                     } else {
                         let uid = result["uid"] as? String
                         user.key = uid
                         
-                        URFireBaseManager.sharedInstance().childByAppendingPath(URUser.path()).childByAppendingPath(user.key).setValue(user)
+                        URFireBaseManager.sharedInstance().childByAppendingPath(URUser.path()).childByAppendingPath(user.key).setValue(user.asJson())
+                        
+                        if (error != nil) {
+                            println(error)
+                        }
                         
                         URUser.login(user, completion: { (success) -> Void in
                             if success {
-                                self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)                                
-                                println("usuario logado")
+                                URUser.setActiveUser(user)
+                                self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
                             }else {
                                 println("usuario nao encontrado")
                             }

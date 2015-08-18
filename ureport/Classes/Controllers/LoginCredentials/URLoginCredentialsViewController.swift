@@ -33,7 +33,23 @@ class URLoginCredentialsViewController: UIViewController {
     }
 
     @IBAction func btLoginTapped(sender: AnyObject) {
-        self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
+        
+        if let textfield = self.view.findTextFieldEmptyInView(self.view) {
+            UIAlertView(title: nil, message: "\(textfield.placeholder!) is empty", delegate: self, cancelButtonTitle: "OK").show()
+            return
+        }
+        
+        var user:URUser! = URUser()
+        user.email = self.txtLogin.text
+        user.password = self.txtPassword.text
+        
+        URUser.login(user, completion: { (success) -> Void in
+            if success {
+                self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
+            }else {
+                UIAlertView(title: nil, message: "Login/Password incorrect", delegate: self, cancelButtonTitle: "OK").show()
+            }
+        })
     }
     
     //MARK: Class Methods
