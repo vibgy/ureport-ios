@@ -39,7 +39,7 @@ class URStoriesTableViewCell: UITableViewCell {
     //MARK: Button Events
     
     @IBAction func btContributeTapped(sender: AnyObject) {
-        viewController?.navigationController?.pushViewController(URAddStoryViewController(nibName:"URAddStoryViewController",bundle:nil), animated: true)
+
     }
     
     //MARK: Class Methods

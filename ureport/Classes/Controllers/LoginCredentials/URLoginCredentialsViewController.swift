@@ -17,7 +17,10 @@ class URLoginCredentialsViewController: UIViewController {
     @IBOutlet weak var viewLogin: UIView!
     @IBOutlet weak var viewPassword: UIView!
     
+    var appDelegate:AppDelegate!
+    
     override func viewDidLoad() {
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         super.viewDidLoad()
         setupUI()
     }
@@ -45,7 +48,7 @@ class URLoginCredentialsViewController: UIViewController {
         
         URUser.login(user, completion: { (success) -> Void in
             if success {
-                self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
+                self.appDelegate.setupNavigationControllerWithMainViewController(URMainViewController())
             }else {
                 UIAlertView(title: nil, message: "Login/Password incorrect", delegate: self, cancelButtonTitle: "OK").show()
             }

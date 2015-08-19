@@ -52,7 +52,7 @@
 		655691771B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691751B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift */; };
 		655691781B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */; };
 		6556917C1B7D860D00525E00 /* URPollTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556917A1B7D860D00525E00 /* URPollTableViewController.swift */; };
-		6556917F1B7E2A8F00525E00 /* URRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556917E1B7E2A8F00525E00 /* URRoundedView.swift */; };
+		6556917F1B7E2A8F00525E00 /* ISRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6556917E1B7E2A8F00525E00 /* ISRoundedView.swift */; };
 		655691831B7E668B00525E00 /* URMarkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691811B7E668B00525E00 /* URMarkerTableViewCell.swift */; };
 		655691841B7E668B00525E00 /* URMarkerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691821B7E668B00525E00 /* URMarkerTableViewCell.xib */; };
 		655691871B7E67AB00525E00 /* URMarkerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655691861B7E67AB00525E00 /* URMarkerTableViewController.swift */; };
@@ -145,7 +145,7 @@
 		655691751B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollMultipleChoiceTableViewCell.swift; sourceTree = "<group>"; };
 		655691761B7D3DD700525E00 /* URPollMultipleChoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URPollMultipleChoiceTableViewCell.xib; sourceTree = "<group>"; };
 		6556917A1B7D860D00525E00 /* URPollTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URPollTableViewController.swift; sourceTree = "<group>"; };
-		6556917E1B7E2A8F00525E00 /* URRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URRoundedView.swift; sourceTree = "<group>"; };
+		6556917E1B7E2A8F00525E00 /* ISRoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISRoundedView.swift; sourceTree = "<group>"; };
 		655691811B7E668B00525E00 /* URMarkerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMarkerTableViewCell.swift; sourceTree = "<group>"; };
 		655691821B7E668B00525E00 /* URMarkerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URMarkerTableViewCell.xib; sourceTree = "<group>"; };
 		655691861B7E67AB00525E00 /* URMarkerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URMarkerTableViewController.swift; sourceTree = "<group>"; };
@@ -347,7 +347,7 @@
 				659A7A921B4F6C3100B56983 /* URDateUtil.swift */,
 				655690701B7CFA0B00525E00 /* URConstant.swift */,
 				655690AA1B7D170100525E00 /* ISRoundedButton.swift */,
-				6556917E1B7E2A8F00525E00 /* URRoundedView.swift */,
+				6556917E1B7E2A8F00525E00 /* ISRoundedView.swift */,
 				658949B11B8255C60087F361 /* URFireBaseManager.swift */,
 				658949B91B83BFF20087F361 /* ISNSObject.swift */,
 			);
@@ -695,7 +695,7 @@
 				655690931B7D13F000525E00 /* URMultipleResult.swift in Sources */,
 				655690871B7D101500525E00 /* URPollCategory.swift in Sources */,
 				658949BA1B83BFF20087F361 /* ISNSObject.swift in Sources */,
-				6556917F1B7E2A8F00525E00 /* URRoundedView.swift in Sources */,
+				6556917F1B7E2A8F00525E00 /* ISRoundedView.swift in Sources */,
 				658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */,
 				6556908F1B7D135C00525E00 /* URNotification.swift in Sources */,
 				658D85971B558A6700DFB949 /* URAddStoryViewController.swift in Sources */,

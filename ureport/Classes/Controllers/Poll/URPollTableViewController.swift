@@ -32,7 +32,7 @@ class URPollTableViewController: UITableViewController {
     //MARK: Class Methods
     
     private func setupTableView() {
-        self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
+        self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
         self.tableView.backgroundColor = URConstant.Color.WINDOW_BACKGROUND
         self.tableView.registerNib(UINib(nibName: "URPollTextTableViewCell", bundle: nil), forCellReuseIdentifier: NSStringFromClass(URPollTextTableViewCell.self))
         self.tableView.separatorColor = UIColor.clearColor()

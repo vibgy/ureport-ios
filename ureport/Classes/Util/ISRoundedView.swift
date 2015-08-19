@@ -1,5 +1,5 @@
 //
-//  URRoundedView.swift
+//  ISRoundedView.swift
 //  ureport
 //
 //  Created by Daniel Amaral on 14/08/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class URRoundedView: UIView {
+class ISRoundedView: UIView {
 
     override func awakeFromNib() {
         self.layer.cornerRadius = self.frame.width / 2

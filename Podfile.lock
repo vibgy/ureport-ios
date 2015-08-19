@@ -1,16 +1,16 @@
 PODS:
   - Firebase (2.3.3)
-  - PKRevealController (2.0.6)
+  - SWRevealViewController (2.3.0)
   - TPKeyboardAvoiding (1.2.8)
 
 DEPENDENCIES:
   - Firebase (>= 2.3.3)
-  - PKRevealController
+  - SWRevealViewController
   - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
   Firebase: 2db60272f68ce40c7d47e5ae6eddc16977c65d4c
-  PKRevealController: ffb45a16f5a5032ad90a3d16e5cbb0d8e035bd58
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
   TPKeyboardAvoiding: f1ef0028fe9ba98ef2871cf55b4bbc39cae0267b
 
 COCOAPODS: 0.38.2

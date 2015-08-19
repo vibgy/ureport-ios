@@ -16,7 +16,7 @@ class URStoriesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
+        setupTableView()                
     }
 
     // MARK: - Table view data source
@@ -57,7 +57,7 @@ class URStoriesTableViewController: UITableViewController {
     }
     
     //MARK: Class Methods
-
+    
     private func setupTableView() {
         self.tableView.backgroundColor = URConstant.Color.WINDOW_BACKGROUND
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0);
