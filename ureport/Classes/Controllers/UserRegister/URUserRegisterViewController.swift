@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -66,31 +67,31 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
             var user:URUser = URUser()
             
             user.nickname = self.txtNick.text
-            user.password = self.txtPassword.text
             user.email = self.txtEmail.text
             user.gender = gender
 //            user.birthday = self.birthDay
             user.country = country?.code
             user.state = self.txtState.text
-            
-            URFireBaseManager.sharedInstance().createUser(user.email, password: user.password,
+            ProgressHUD.show(nil)
+            URFireBaseManager.sharedInstance().createUser(user.email, password: self.txtPassword.text,
                 withValueCompletionBlock: { error, result in
-                    
+            ProgressHUD.dismiss()
                     if error != nil {
 //                        UIAlertView(title: nil, message: "The field \(textField.placeholder!) is empty", delegate: self, cancelButtonTitle: "OK").show()
                     } else {
                         let uid = result["uid"] as? String
                         user.key = uid
                         
+                        ProgressHUD.show(nil)
                         URFireBaseManager.sharedInstance().childByAppendingPath(URUser.path()).childByAppendingPath(user.key).setValue(user.asJson())
+                        ProgressHUD.dismiss()
                         
                         if (error != nil) {
                             println(error)
                         }
                         
-                        URUser.login(user, completion: { (success) -> Void in
+                        URUser.login(user.email!,password: self.txtPassword.text, completion: { (FAuthenticationError,success) -> Void in
                             if success {
-                                URUser.setActiveUser(user)
                                 self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
                             }else {
                                 println("usuario nao encontrado")

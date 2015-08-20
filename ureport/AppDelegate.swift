@@ -48,15 +48,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         
         addLeftButtonMenuInViewController(viewController)
         
-        if self.navigation == nil {
-            self.navigation = UINavigationController(rootViewController: viewController)
-            setupNavigationDefaultAtrributes()
-            self.navigation!.navigationBar.translucent = true
-        }
+        self.navigation = UINavigationController(rootViewController: viewController)
+        setupNavigationDefaultAtrributes()
+        self.navigation!.navigationBar.translucent = true
         
         if self.revealController == nil {
             self.revealController = SWRevealViewController(rearViewController: menuViewController, frontViewController: self.navigation)
-            self.revealController!.rearViewRevealWidth = 237
+            self.revealController!.rearViewRevealWidth = 250
 
             self.revealController!.delegate = self
             
@@ -65,21 +63,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
             
         }
         
-        self.window?.rootViewController = self.revealController
-        self.window?.makeKeyAndVisible()        
+        switchRootViewController(self.revealController!, animated: true, completion: nil)
+        self.window?.makeKeyAndVisible()
         
     }
     
     func setupNavigationControllerWithLoginViewController() {
         
-        if self.navigation == nil {
-            self.navigation = UINavigationController(rootViewController: loginViewController!)
-            setupNavigationDefaultAtrributes()
-            self.navigation!.navigationBar.translucent = false
-            self.navigation!.setNavigationBarHidden(true, animated: false)
-        }
+        self.navigation = UINavigationController(rootViewController: loginViewController!)
+        setupNavigationDefaultAtrributes()
+        self.navigation!.navigationBar.translucent = false
+        self.navigation!.setNavigationBarHidden(true, animated: false)
         
-        self.window?.rootViewController = self.navigation;
+        switchRootViewController(self.navigation!, animated: true, completion: nil)        
         self.window?.makeKeyAndVisible()
     }
     
@@ -100,10 +96,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
         self.revealController?.revealToggleAnimated(true)
     }
     
-    //MARK: SWRevealViewControllerDelegate
-    
-    func revealController(revealController: SWRevealViewController!, didMoveToPosition position: FrontViewPosition) {
 
+    func switchRootViewController(rootViewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        if animated {
+            UIView.transitionWithView(window!, duration: 0.5, options: .TransitionCrossDissolve, animations: {
+                let oldState: Bool = UIView.areAnimationsEnabled()
+                UIView.setAnimationsEnabled(false)
+                self.window!.rootViewController = rootViewController
+                UIView.setAnimationsEnabled(oldState)
+                }, completion: { (finished: Bool) -> () in
+                    if completion != nil {
+                        completion!()
+                    }
+            })
+        } else {
+            window!.rootViewController = rootViewController
+        }
     }
     
 }

@@ -60,12 +60,17 @@
 		6556918B1B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655691891B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib */; };
 		6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6571915A1B4EC693002CA357 /* LaunchImages.xcassets */; };
 		658949B21B8255C60087F361 /* URFireBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658949B11B8255C60087F361 /* URFireBaseManager.swift */; };
-		658949BA1B83BFF20087F361 /* ISNSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658949B91B83BFF20087F361 /* ISNSObject.swift */; };
+		658949BA1B83BFF20087F361 /* ISNSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658949B91B83BFF20087F361 /* ISNSObjectExtension.swift */; };
 		658949BE1B83E1740087F361 /* ISMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658949BC1B83E1740087F361 /* ISMenuViewController.swift */; };
 		658949BF1B83E1740087F361 /* ISMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658949BD1B83E1740087F361 /* ISMenuViewController.xib */; };
 		658949C11B83E1A60087F361 /* ISMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658949C01B83E1A60087F361 /* ISMenu.swift */; };
 		658949C51B83E1D30087F361 /* ISMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658949C31B83E1D30087F361 /* ISMenuTableViewCell.swift */; };
 		658949C61B83E1D30087F361 /* ISMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658949C41B83E1D30087F361 /* ISMenuTableViewCell.xib */; };
+		658949CD1B8571FB0087F361 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 658949CA1B8571FB0087F361 /* ProgressHUD.bundle */; };
+		658949CE1B8571FB0087F361 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 658949CC1B8571FB0087F361 /* ProgressHUD.m */; };
+		658949D01B8577190087F361 /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658949CF1B8577180087F361 /* FirebaseSimpleLogin.framework */; };
+		658949D21B8577530087F361 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658949D11B8577530087F361 /* Social.framework */; };
+		658949D41B85775A0087F361 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658949D31B85775A0087F361 /* Accounts.framework */; };
 		658D857B1B5457CC00DFB949 /* URLoginCredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */; };
 		658D857C1B5457CC00DFB949 /* URLoginCredentialsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */; };
 		658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */; };
@@ -153,12 +158,18 @@
 		655691891B7E6A0D00525E00 /* URAddMarkerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URAddMarkerTableViewCell.xib; sourceTree = "<group>"; };
 		6571915A1B4EC693002CA357 /* LaunchImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LaunchImages.xcassets; sourceTree = "<group>"; };
 		658949B11B8255C60087F361 /* URFireBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URFireBaseManager.swift; sourceTree = "<group>"; };
-		658949B91B83BFF20087F361 /* ISNSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISNSObject.swift; sourceTree = "<group>"; };
+		658949B91B83BFF20087F361 /* ISNSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISNSObjectExtension.swift; sourceTree = "<group>"; };
 		658949BC1B83E1740087F361 /* ISMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISMenuViewController.swift; sourceTree = "<group>"; };
 		658949BD1B83E1740087F361 /* ISMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISMenuViewController.xib; sourceTree = "<group>"; };
 		658949C01B83E1A60087F361 /* ISMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISMenu.swift; sourceTree = "<group>"; };
 		658949C31B83E1D30087F361 /* ISMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISMenuTableViewCell.swift; sourceTree = "<group>"; };
 		658949C41B83E1D30087F361 /* ISMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISMenuTableViewCell.xib; sourceTree = "<group>"; };
+		658949CA1B8571FB0087F361 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		658949CB1B8571FB0087F361 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		658949CC1B8571FB0087F361 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		658949CF1B8577180087F361 /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
+		658949D11B8577530087F361 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		658949D31B85775A0087F361 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		658D85791B5457CC00DFB949 /* URLoginCredentialsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLoginCredentialsViewController.swift; sourceTree = "<group>"; };
 		658D857A1B5457CC00DFB949 /* URLoginCredentialsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = URLoginCredentialsViewController.xib; sourceTree = "<group>"; };
 		658D857E1B54597700DFB949 /* URForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -184,7 +195,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658949D41B85775A0087F361 /* Accounts.framework in Frameworks */,
+				658949D21B8577530087F361 /* Social.framework in Frameworks */,
 				65409FF11B4C977600344D75 /* Foundation.framework in Frameworks */,
+				658949D01B8577190087F361 /* FirebaseSimpleLogin.framework in Frameworks */,
 				8504B15B8828C37AD0B0A324 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +216,7 @@
 		65409FB21B4C842700344D75 = {
 			isa = PBXGroup;
 			children = (
+				658949CF1B8577180087F361 /* FirebaseSimpleLogin.framework */,
 				65409FF01B4C977600344D75 /* Foundation.framework */,
 				65409FBD1B4C842700344D75 /* ureport */,
 				65409FD31B4C842700344D75 /* ureportTests */,
@@ -349,7 +364,7 @@
 				655690AA1B7D170100525E00 /* ISRoundedButton.swift */,
 				6556917E1B7E2A8F00525E00 /* ISRoundedView.swift */,
 				658949B11B8255C60087F361 /* URFireBaseManager.swift */,
-				658949B91B83BFF20087F361 /* ISNSObject.swift */,
+				658949B91B83BFF20087F361 /* ISNSObjectExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -357,6 +372,7 @@
 		65409FE71B4C845200344D75 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				658949C91B8571CF0087F361 /* ProgressHUD */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -473,6 +489,16 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		658949C91B8571CF0087F361 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				658949CA1B8571FB0087F361 /* ProgressHUD.bundle */,
+				658949CB1B8571FB0087F361 /* ProgressHUD.h */,
+				658949CC1B8571FB0087F361 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		658D85781B5457AD00DFB949 /* LoginCredentials */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +546,8 @@
 		765863F8BACD5E4ED452B82C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				658949D31B85775A0087F361 /* Accounts.framework */,
+				658949D11B8577530087F361 /* Social.framework */,
 				11918D7424D9B949ACF0C902 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -633,6 +661,7 @@
 				65409FC81B4C842700344D75 /* Images.xcassets in Resources */,
 				6571915B1B4EC693002CA357 /* LaunchImages.xcassets in Resources */,
 				65409FEF1B4C84DE00344D75 /* URLoginViewController.xib in Resources */,
+				658949CD1B8571FB0087F361 /* ProgressHUD.bundle in Resources */,
 				659A20D41B7ECD6C00D02C69 /* URPollTableViewController.xib in Resources */,
 				658D85981B558A6700DFB949 /* URAddStoryViewController.xib in Resources */,
 				655691841B7E668B00525E00 /* URMarkerTableViewCell.xib in Resources */,
@@ -694,7 +723,7 @@
 				655690951B7D142900525E00 /* UROpenQuestion.swift in Sources */,
 				655690931B7D13F000525E00 /* URMultipleResult.swift in Sources */,
 				655690871B7D101500525E00 /* URPollCategory.swift in Sources */,
-				658949BA1B83BFF20087F361 /* ISNSObject.swift in Sources */,
+				658949BA1B83BFF20087F361 /* ISNSObjectExtension.swift in Sources */,
 				6556917F1B7E2A8F00525E00 /* ISRoundedView.swift in Sources */,
 				658D85801B54597700DFB949 /* URForgotPasswordViewController.swift in Sources */,
 				6556908F1B7D135C00525E00 /* URNotification.swift in Sources */,
@@ -703,6 +732,7 @@
 				658949BE1B83E1740087F361 /* ISMenuViewController.swift in Sources */,
 				655690791B7CFF5100525E00 /* UIColorExtension.swift in Sources */,
 				655690831B7D0EA200525E00 /* URType.swift in Sources */,
+				658949CE1B8571FB0087F361 /* ProgressHUD.m in Sources */,
 				655690A51B7D159C00525E00 /* URContact.swift in Sources */,
 				655690991B7D147900525E00 /* URMarker.swift in Sources */,
 				655690761B7CFF5100525E00 /* ISImageUtil.swift in Sources */,
@@ -864,6 +894,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ureport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -878,6 +912,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ureport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

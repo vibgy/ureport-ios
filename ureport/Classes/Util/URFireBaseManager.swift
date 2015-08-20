@@ -12,7 +12,7 @@ import Firebase
 class URFireBaseManager: NSObject {
     static let Path = "https://u-report.firebaseio.com/"
     static let Reference = Firebase(url: Path)
-    
+
     class func sharedInstance() -> Firebase {
         return Reference
     }

@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class URUser: NSObject{
     
     var key: String!
     var nickname: String!
-    var password: String!
     var email: String!
     var state: String!
     var birthday: NSDate!
@@ -30,13 +30,33 @@ class URUser: NSObject{
         return "user"
     }
     
-    class func login(user:URUser,completion:(Bool) -> Void) {
-        URFireBaseManager.sharedInstance().authUser(user.email, password: user.password,
+    class func login(email:String,password:String,completion:(FAuthenticationError?,Bool) -> Void) {
+        URFireBaseManager.sharedInstance().authUser(email, password: password,
             withCompletionBlock: { error, authData in
                 if error != nil {
-                    completion(false)
+                    
+                    if let errorCode = FAuthenticationError(rawValue: error.code) {
+                        switch (errorCode) {
+                        case .UserDoesNotExist:
+                            completion(FAuthenticationError.UserDoesNotExist,false)
+                        case .InvalidEmail:
+                            completion(FAuthenticationError.InvalidEmail,false)
+                        case .InvalidPassword:
+                            completion(FAuthenticationError.InvalidPassword,false)
+                        default:
+                            completion(FAuthenticationError.Unknown,false)
+                        }
+                    }
                 } else {
-                    completion(true)
+
+                    URUser.getByKey(authData.uid, completion: { (user) -> Void in
+                        if user != nil {
+                            URUser.setActiveUser(user)
+                            completion(nil,true)
+                        }else{
+                            completion(nil,false)
+                        }
+                    })
                 }
         })
     }
@@ -45,6 +65,19 @@ class URUser: NSObject{
         URFireBaseManager.sharedInstance().childByAppendingPath(path()).setValue(object)
     }
     
+    class func getByKey(key:String,completion:(URUser?) -> Void){
+        
+     URFireBaseManager.sharedInstance().childByAppendingPath(path()).childByAppendingPath(key).observeSingleEventOfType(FEventType.Value, withBlock: { snapshot in
+        if snapshot != nil {
+            var user:URUser = URUser.fromJson(snapshot.value as! NSDictionary)
+            completion(user)
+        }else {
+            completion(nil)
+        }
+     })
+    }
+    
+    //MARK: User Account Manager
     
     class func activeUser() -> URUser? {
         var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()

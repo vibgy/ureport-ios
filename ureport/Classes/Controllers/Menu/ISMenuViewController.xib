@@ -43,30 +43,30 @@
                                 <constraint firstItem="zcx-bM-adt" firstAttribute="leading" secondItem="rOj-Kw-ybm" secondAttribute="leading" id="yqa-1I-SfO"/>
                             </constraints>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Daniel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOO-66-tEG">
-                            <rect key="frame" x="87" y="30" width="79" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Daniel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="GOO-66-tEG">
+                            <rect key="frame" x="87" y="30" width="130" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="eMv-5v-4V4"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-Ps-a9U">
-                            <rect key="frame" x="87" y="56" width="79" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="xAb-Ps-a9U">
+                            <rect key="frame" x="87" y="56" width="130" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="OIc-v7-Erl"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tj-Xq-nbV">
-                            <rect key="frame" x="87" y="79" width="79" height="21"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stories: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="3tj-Xq-nbV">
+                            <rect key="frame" x="87" y="79" width="130" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="YAU-vP-C9a"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -105,12 +105,12 @@
                         <constraint firstItem="8bl-dD-STf" firstAttribute="top" secondItem="3tj-Xq-nbV" secondAttribute="bottom" constant="17" id="eiu-gf-Lj6"/>
                         <constraint firstItem="3tj-Xq-nbV" firstAttribute="top" secondItem="xAb-Ps-a9U" secondAttribute="bottom" constant="2" id="fCl-Si-hJm"/>
                         <constraint firstAttribute="centerX" secondItem="8bl-dD-STf" secondAttribute="centerX" id="g3M-i3-A1r"/>
-                        <constraint firstAttribute="trailing" secondItem="3tj-Xq-nbV" secondAttribute="trailing" constant="71" id="hdK-yF-Zu5"/>
+                        <constraint firstAttribute="trailing" secondItem="3tj-Xq-nbV" secondAttribute="trailing" constant="20" id="hdK-yF-Zu5"/>
                         <constraint firstItem="rOj-Kw-ybm" firstAttribute="top" secondItem="foF-kR-CZQ" secondAttribute="top" constant="37" id="mQs-By-vva"/>
                         <constraint firstItem="xAb-Ps-a9U" firstAttribute="top" secondItem="GOO-66-tEG" secondAttribute="bottom" constant="5" id="o9g-br-1jo"/>
                         <constraint firstItem="3tj-Xq-nbV" firstAttribute="leading" secondItem="rOj-Kw-ybm" secondAttribute="trailing" constant="8" id="suD-Fx-GZj"/>
-                        <constraint firstAttribute="trailing" secondItem="GOO-66-tEG" secondAttribute="trailing" constant="71" id="tcp-RM-bjc"/>
-                        <constraint firstAttribute="trailing" secondItem="xAb-Ps-a9U" secondAttribute="trailing" constant="71" id="uwf-Z4-bTb"/>
+                        <constraint firstAttribute="trailing" secondItem="GOO-66-tEG" secondAttribute="trailing" constant="20" id="tcp-RM-bjc"/>
+                        <constraint firstAttribute="trailing" secondItem="xAb-Ps-a9U" secondAttribute="trailing" constant="20" id="uwf-Z4-bTb"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">

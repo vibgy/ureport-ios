@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class URLoginCredentialsViewController: UIViewController {
 
@@ -41,13 +42,10 @@ class URLoginCredentialsViewController: UIViewController {
             UIAlertView(title: nil, message: "\(textfield.placeholder!) is empty", delegate: self, cancelButtonTitle: "OK").show()
             return
         }
-        
-        var user:URUser! = URUser()
-        user.email = self.txtLogin.text
-        user.password = self.txtPassword.text
-        
-        URUser.login(user, completion: { (success) -> Void in
-            if success {
+        ProgressHUD.show(nil)
+        URUser.login(self.txtLogin.text,password: self.txtPassword.text, completion: { (FAuthenticationError,success) -> Void in
+        ProgressHUD.dismiss()
+            if success {                
                 self.appDelegate.setupNavigationControllerWithMainViewController(URMainViewController())
             }else {
                 UIAlertView(title: nil, message: "Login/Password incorrect", delegate: self, cancelButtonTitle: "OK").show()
