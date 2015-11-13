@@ -24,14 +24,14 @@ extension UIView {
     
     func findTextFieldEmptyInView(input: UIView) -> UITextField? {
         if input.isKindOfClass(UITextField) {
-            var textField:UITextField! = input as! UITextField
-            if textField.text.isEmpty {
+            let textField:UITextField! = input as! UITextField
+            if textField.text!.isEmpty {
                 return textField
             }
         }
 
         for view in input.subviews {
-            if let foundView = self.findTextFieldEmptyInView(view as! UIView) {
+            if let foundView = self.findTextFieldEmptyInView(view ) {
                 return foundView
             }
         }

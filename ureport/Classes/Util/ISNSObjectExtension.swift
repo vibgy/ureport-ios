@@ -10,7 +10,7 @@ import Foundation
 
 extension NSObject {
     class func fromJson(jsonInfo: NSDictionary) -> Self {
-        var object = self()
+        let object = self.init()
         
         (object as NSObject).load(jsonInfo)
         
@@ -30,7 +30,7 @@ extension NSObject {
     func propertyNames() -> [String] {
         var names: [String] = []
         var count: UInt32 = 0
-        var properties = class_copyPropertyList(classForCoder, &count)
+        let properties = class_copyPropertyList(classForCoder, &count)
         for var i = 0; i < Int(count); ++i {
             let property: objc_property_t = properties[i]
             let name: String = String.fromCString(property_getName(property))!

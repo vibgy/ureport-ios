@@ -52,7 +52,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
         super.init(nibName: "URUserRegisterViewController", bundle: nil)
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -87,18 +87,18 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
                         ProgressHUD.dismiss()
                         
                         if (error != nil) {
-                            println(error)
+                            print(error)
                         }
                         
-                        URUser.login(user.email!,password: self.txtPassword.text, completion: { (FAuthenticationError,success) -> Void in
+                        URUser.login(user.email!,password: self.txtPassword.text!, completion: { (FAuthenticationError,success) -> Void in
                             if success {
                                 self.navigationController!.pushViewController(URMainViewController(nibName: "URMainViewController", bundle: nil), animated: true)
                             }else {
-                                println("usuario nao encontrado")
+                                print("usuario nao encontrado")
                             }
                         })
                         
-                        println("Successfully created user account with uid: \(uid)")
+                        print("Successfully created user account with uid: \(uid)")
                     }
             })
             
@@ -140,7 +140,7 @@ class URUserRegisterViewController: UIViewController, UIPickerViewDelegate, UIPi
     }
     
     func dateChanged(sender:AnyObject) {
-        var datePicker:UIDatePicker? = sender as? UIDatePicker
+        let datePicker:UIDatePicker? = sender as? UIDatePicker
         self.birthDay = datePicker!.date
         self.txtBirthDay.text = URDateUtil.brithDayFormatter(self.birthDay!)
     }

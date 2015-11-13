@@ -40,7 +40,7 @@ class URMarkerTableViewController: UITableViewController, MarkerDelegate{
 
         cell.delegate = self
         
-        var marker:URMarker = URMarker()
+        let marker:URMarker = URMarker()
         marker.name = "Violence"
         cell.setupCellWith(marker)
         
@@ -62,7 +62,7 @@ class URMarkerTableViewController: UITableViewController, MarkerDelegate{
     //MARK: MarkerDelegate
     
     func markerHasTapped(marker: URMarker) {
-        print(marker.name!)
+        print(marker.name!, terminator: "")
     }
     
 }

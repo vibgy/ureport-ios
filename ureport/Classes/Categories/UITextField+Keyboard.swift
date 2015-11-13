@@ -32,10 +32,10 @@ extension UIViewController: UITextFieldDelegate, UITextViewDelegate {
     }
     
     private func setupAccessoryView(component:AnyObject) {
-        var keyboardToolBar:UIToolbar! = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        let keyboardToolBar:UIToolbar! = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
         keyboardToolBar!.barStyle = UIBarStyle.Default
         
-        var arrayButtonItem:[UIBarButtonItem]! = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil),
+        let arrayButtonItem:[UIBarButtonItem]! = [UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil),
             UIBarButtonItem(title: NSLocalizedString("close", comment: ""), style: UIBarButtonItemStyle.Done, target: self, action: "closeKeyBoard")]
         
         keyboardToolBar?.setItems(arrayButtonItem, animated: true)

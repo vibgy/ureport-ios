@@ -17,11 +17,11 @@ class URCountry: NSObject {
 
         var countries: [URCountry] = []
         
-        for code in NSLocale.ISOCountryCodes() as! [String] {
-            var country:URCountry? = URCountry()
+        for code in NSLocale.ISOCountryCodes() {
+            let country:URCountry? = URCountry()
 
             let id = NSLocale.localeIdentifierFromComponents([NSLocaleCountryCode: code])
-            let name = NSLocale(localeIdentifier: NSLocale.preferredLanguages()[0] as! String).displayNameForKey(NSLocaleIdentifier, value: id) ?? "Country not found for code: \(code)"
+            let name = NSLocale(localeIdentifier: NSLocale.preferredLanguages()[0] ).displayNameForKey(NSLocaleIdentifier, value: id) ?? "Country not found for code: \(code)"
             
             country!.code = code
             country!.name = name
@@ -34,9 +34,9 @@ class URCountry: NSObject {
     }
     
     class func getCurrentURCountry() -> URCountry {
-        var country:URCountry? = URCountry()
+        let country:URCountry? = URCountry()
         
-        var locale:NSLocale! = NSLocale.currentLocale()
+        let locale:NSLocale! = NSLocale.currentLocale()
         country!.code = locale.objectForKey(NSLocaleCountryCode) as? String
         country!.name = locale.displayNameForKey(NSLocaleCountryCode, value: country!.code!)
         return country!

@@ -47,7 +47,7 @@ class URStoriesTableViewController: UITableViewController {
         cell.contentView.layoutIfNeeded()
         cell.viewController = self
         
-        var story:URStory! = URStory()
+        let story:URStory! = URStory()
         story.title = "Increasing Immunization Coverage in Uganda: The Community Problem-solving and Strategy Development Approach"
         story.contributions = 2
         story.user?.nickname = "Daniel"

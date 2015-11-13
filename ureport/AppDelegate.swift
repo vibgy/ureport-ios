@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
     
     func setupNavigationControllerWithMainViewController(viewController:UIViewController) {
         
-        var menuViewController:ISMenuViewController = ISMenuViewController(nibName:"ISMenuViewController",bundle:nil)
+        let menuViewController:ISMenuViewController = ISMenuViewController(nibName:"ISMenuViewController",bundle:nil)
         
         addLeftButtonMenuInViewController(viewController)
         
@@ -88,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SWRevealViewControllerDel
     }
     
     func addLeftButtonMenuInViewController(viewController:UIViewController){
-        var image:UIImage = ISImageUtil.resizeImage(UIImage(named: "icon_burgermenu")!,scaledToSize: CGSize(width: 20, height: 16))
+        let image:UIImage = ISImageUtil.resizeImage(UIImage(named: "icon_burgermenu")!,scaledToSize: CGSize(width: 20, height: 16))
         viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self, action: "toggleMenu")
     }
     

@@ -44,7 +44,7 @@ class ISMenuViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(NSStringFromClass(ISMenuTableViewCell.self), forIndexPath: indexPath) as! ISMenuTableViewCell
         
-        var menu:ISMenu! = self.menuList[indexPath.row]
+        let menu:ISMenu! = self.menuList[indexPath.row]
 
         cell.setupCellWith(menu)
         

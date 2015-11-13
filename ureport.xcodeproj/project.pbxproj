@@ -609,6 +609,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = UR;
+				LastSwiftMigration = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = ilhasoft;
 				TargetAttributes = {

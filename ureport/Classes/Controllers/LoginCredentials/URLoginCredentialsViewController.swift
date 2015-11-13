@@ -43,7 +43,7 @@ class URLoginCredentialsViewController: UIViewController {
             return
         }
         ProgressHUD.show(nil)
-        URUser.login(self.txtLogin.text,password: self.txtPassword.text, completion: { (FAuthenticationError,success) -> Void in
+        URUser.login(self.txtLogin.text!,password: self.txtPassword.text!, completion: { (FAuthenticationError,success) -> Void in
         ProgressHUD.dismiss()
             if success {                
                 self.appDelegate.setupNavigationControllerWithMainViewController(URMainViewController())

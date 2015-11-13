@@ -13,7 +13,7 @@ class ISImageUtil: NSObject {
     static func resizeImage(image:UIImage, scaledToSize: CGSize) -> UIImage{
      UIGraphicsBeginImageContextWithOptions(scaledToSize, false, 0.0)
         image.drawInRect(CGRect(x: 0, y: 0, width: scaledToSize.width, height: scaledToSize.height))
-        var newImage:UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+        let newImage:UIImage! = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return newImage
     }

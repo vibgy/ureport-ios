@@ -69,7 +69,7 @@ class URUser: NSObject{
         
      URFireBaseManager.sharedInstance().childByAppendingPath(path()).childByAppendingPath(key).observeSingleEventOfType(FEventType.Value, withBlock: { snapshot in
         if snapshot != nil {
-            var user:URUser = URUser.fromJson(snapshot.value as! NSDictionary)
+            let user:URUser = URUser.fromJson(snapshot.value as! NSDictionary)
             completion(user)
         }else {
             completion(nil)
@@ -80,13 +80,13 @@ class URUser: NSObject{
     //MARK: User Account Manager
     
     class func activeUser() -> URUser? {
-        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         var encodedData: NSData?
         
         encodedData = defaults.objectForKey("user") as? NSData
         
         if encodedData != nil {
-            var user: URUser = URUser.fromJson((NSKeyedUnarchiver.unarchiveObjectWithData(encodedData!) as! NSDictionary))
+            let user: URUser = URUser.fromJson((NSKeyedUnarchiver.unarchiveObjectWithData(encodedData!) as! NSDictionary))
             return user
         }else{
             return nil
@@ -96,14 +96,14 @@ class URUser: NSObject{
     
     class func setActiveUser(user: URUser!) {
         self.deactivateUser()
-        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        var encodedObject: NSData = NSKeyedArchiver.archivedDataWithRootObject(user.asJson())
+        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let encodedObject: NSData = NSKeyedArchiver.archivedDataWithRootObject(user.asJson())
         defaults.setObject(encodedObject, forKey: "user")
         defaults.synchronize()
     }
     
     class func deactivateUser() {
-        var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
+        let defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         defaults.removeObjectForKey("user")
         defaults.synchronize()
     }

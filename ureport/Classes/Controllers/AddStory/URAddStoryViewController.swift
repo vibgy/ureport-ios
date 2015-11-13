@@ -64,7 +64,7 @@ class URAddStoryViewController: UIViewController {
     
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         if textView == txtTitle{
-            return count(textView.text) + (count(text) - range.length) <= maxTitleLength
+            return textView.text.characters.count + (text.characters.count - range.length) <= maxTitleLength
         }else {
             return true
         }
